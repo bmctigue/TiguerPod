@@ -1,0 +1,16 @@
+PODS:
+  - Promis (2.0.0)
+
+DEPENDENCIES:
+  - Promis
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Promis
+
+SPEC CHECKSUMS:
+  Promis: 92878a15a9d146622b1815e137638e2c0be974ff
+
+PODFILE CHECKSUM: 875f28e9cace5c217ed498aeeec590e52afb960c
+
+COCOAPODS: 1.5.2
