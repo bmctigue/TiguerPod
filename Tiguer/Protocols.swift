@@ -44,7 +44,7 @@ public protocol NetworkSession {
     func loadData(with urlRequest: URLRequest, completionHandler: @escaping (Data?, Error?) -> Void)
 }
 
-protocol URLGenerator {
+public protocol URLGenerator {
     func url() -> URL?
     func queryItemsFromRequest(_ request: Request) -> [URLQueryItem]?
 }
