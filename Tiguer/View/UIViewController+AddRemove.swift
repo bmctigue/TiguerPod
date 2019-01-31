@@ -2,7 +2,7 @@
 //  UIViewController+AddRemove.swift
 //  Tiguer
 //
-//  Created by Bruce McTigue on 1/2/19.
+//  Created by John Sundell on 1/2/19.
 //  Copyright © 2019 tiguer. All rights reserved.
 //
 
@@ -19,7 +19,6 @@ extension UIViewController {
         guard parent != nil else {
             return
         }
-        
         willMove(toParent: nil)
         removeFromParent()
         view.removeFromSuperview()

@@ -2,7 +2,7 @@
 //  TableViewDataSource.swift
 //  Tiguer
 //
-//  Created by Bruce McTigue on 12/29/18.
+//  Created by John Sundell on 1/2/19.
 //  Copyright © 2018 tiguer. All rights reserved.
 //
 
