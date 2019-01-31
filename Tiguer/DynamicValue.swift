@@ -8,8 +8,9 @@
 
 import Foundation
 
-typealias CompletionHandler = (() -> Void)
-class DynamicValue<T> {
+public typealias CompletionHandler = (() -> Void)
+
+public class DynamicValue<T> {
     
     var value: T {
         didSet {

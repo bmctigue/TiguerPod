@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct Request {
+public struct Request {
     var params: [String: String]
     init(_ params: [String: String] = [:]) {
         self.params = params
     }
 }
 
-struct Response<Model> {
+public struct Response<Model> {
     let models: [Model]
 }

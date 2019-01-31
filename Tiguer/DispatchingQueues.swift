@@ -12,21 +12,21 @@ protocol Dispatching {
     func dispatch(_ work: @escaping () -> Void)
 }
 
-class Dispatcher {
+public class Dispatcher {
     let queue: DispatchQueue
     init(queue: DispatchQueue) {
         self.queue = queue
     }
 }
 
-class AsyncQueue: Dispatcher {}
+public class AsyncQueue: Dispatcher {}
 extension AsyncQueue: Dispatching {
     func dispatch(_ work: @escaping () -> Void) {
         queue.async(execute: work)
     }
 }
 
-class SyncQueue: Dispatcher {}
+public class SyncQueue: Dispatcher {}
 extension SyncQueue: Dispatching {
     func dispatch(_ work: @escaping () -> Void) {
         queue.sync(execute: work)

@@ -8,32 +8,27 @@
 
 import Foundation
 
-enum TestingState {
+public enum TestingState {
     case testing
     case notTesting
 }
 
-enum MovieFavoriteState: Equatable {
-    case selected(Int)
-    case unSelected(Int)
-}
-
-enum StoreError: Error {
+public enum StoreError: Error {
     case fetchDataFailed
 }
 
-enum Store {
-    enum Result {
+public enum Store {
+    public enum Result {
         case success(Data)
     }
 }
 
-enum DataAdapterError: Error {
+public enum DataAdapterError: Error {
     case conversionFailed
 }
 
-enum DataAdapter {
-    enum Result<Model> {
+public enum DataAdapter {
+    public enum Result<Model> {
         case success([Model])
     }
 }
