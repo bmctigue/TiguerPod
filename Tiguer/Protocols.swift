@@ -9,38 +9,38 @@
 import UIKit
 import Promis
 
-typealias VCBuilderBlock = ((UIViewController) -> Void)
-typealias TabBarBuilderBlock = ((UITabBarController) -> Void)
+public typealias VCBuilderBlock = ((UIViewController) -> Void)
+public typealias TabBarBuilderBlock = ((UITabBarController) -> Void)
 
 public let forceKey = "force"
 
-protocol BaseBuilder: class {
+public protocol BaseBuilder: class {
     func run()
 }
 
-protocol VCBuilder: class {
+public protocol VCBuilder: class {
     func run(completionHandler: VCBuilderBlock)
 }
 
-protocol StoreProtocol {
+public protocol StoreProtocol {
     func fetchData(_ url: URL) -> Future<Store.Result>
 }
 
-protocol DataAdapterProtocol {
+public protocol DataAdapterProtocol {
     associatedtype Model
     func itemsFromData(_ data: Data, completionHandler: @escaping (DataAdapter.Result<Model>) -> Void)
 }
 
-protocol InteractorProtocol: class {
+public protocol InteractorProtocol: class {
     func fetchItems(_ request: Request)
 }
 
-protocol PresenterProtocol {
+public protocol PresenterProtocol {
     associatedtype Model
     associatedtype ViewModel
 }
 
-protocol NetworkSession {
+public protocol NetworkSession {
     func loadData(with urlRequest: URLRequest, completionHandler: @escaping (Data?, Error?) -> Void)
 }
 
