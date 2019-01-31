@@ -50,7 +50,7 @@ public protocol URLGenerator {
 }
 
 extension URLGenerator {
-    func queryItemsFromRequest(_ request: Request) -> [URLQueryItem]? {
+    public func queryItemsFromRequest(_ request: Request) -> [URLQueryItem]? {
         guard !request.params.isEmpty else {
             return nil
         }
