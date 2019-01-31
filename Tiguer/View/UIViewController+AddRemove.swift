@@ -8,7 +8,7 @@
 
 import UIKit
 
-public extension UIViewController {
+extension UIViewController {
     public func add(_ child: UIViewController) {
         addChild(child)
         view.addSubview(child.view)

@@ -10,13 +10,13 @@ import UIKit
 
 public class TableViewDataSource<Model>: NSObject, UITableViewDataSource {
     
-    typealias CellConfigurator = (Model, UITableViewCell) -> Void
+    public typealias CellConfigurator = (Model, UITableViewCell) -> Void
     
     private var models: [Model]
     private let reuseIdentifier: String
     private let cellConfigurator: CellConfigurator
     
-    init(models: [Model],
+    public init(models: [Model],
          reuseIdentifier: String,
          cellConfigurator: @escaping CellConfigurator) {
         self.models = models
