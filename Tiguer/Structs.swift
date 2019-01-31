@@ -9,12 +9,12 @@
 import Foundation
 
 public struct Request {
-    var params: [String: String]
-    init(_ params: [String: String] = [:]) {
+    public var params: [String: String]
+    public init(_ params: [String: String] = [:]) {
         self.params = params
     }
 }
 
 public struct Response<Model> {
-    let models: [Model]
+    public let models: [Model]
 }

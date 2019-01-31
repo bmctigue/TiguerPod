@@ -10,7 +10,7 @@ import Foundation
 
 public class URLProtocolStub: URLProtocol {
     // this dictionary maps URLs to test data
-    static var testURLs = [URL?: Data]()
+    static public var testURLs = [URL?: Data]()
     
     // say we want to handle all types of request
     override public class func canInit(with request: URLRequest) -> Bool {

@@ -1,5 +1,5 @@
 //
-//  MoviesLocalStore.swift
+//  LocalStore.swift
 //  Tiguer
 //
 //  Created by Bruce McTigue on 12/27/18.

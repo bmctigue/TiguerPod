@@ -12,8 +12,7 @@ public class TableViewDataSource<Model>: NSObject, UITableViewDataSource {
     
     typealias CellConfigurator = (Model, UITableViewCell) -> Void
     
-    var models: [Model]
-    
+    private var models: [Model]
     private let reuseIdentifier: String
     private let cellConfigurator: CellConfigurator
     
