@@ -16,5 +16,8 @@ public struct Request {
 }
 
 public struct Response<Model> {
-    public let models: [Model]
+    public var models: [Model]
+    public init(_ models: [Model]) {
+        self.models = models
+    }
 }
