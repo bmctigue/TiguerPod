@@ -31,6 +31,11 @@ public protocol DataAdapterProtocol {
     func itemsFromData(_ data: Data, completionHandler: @escaping (DataAdapter.Result<Model>) -> Void)
 }
 
+protocol ServiceProtocol: class {
+    associatedtype Model
+    func fetchItems(_ request: Request, completionHandler: @escaping ([Model]) -> Void)
+}
+
 public protocol InteractorProtocol: class {
     func fetchItems(_ request: Request)
 }
