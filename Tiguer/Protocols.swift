@@ -28,7 +28,7 @@ public protocol StoreProtocol {
 
 public protocol DataAdapterProtocol {
     associatedtype Model
-    func itemsFromData(_ data: Data, completionHandler: @escaping (DataAdapter.Result<Model>) -> Void)
+    func itemsFromData(_ data: Data) -> Future<DataAdapter.Result<Model>>
 }
 
 public protocol ServiceProtocol: class {
