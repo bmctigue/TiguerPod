@@ -12,13 +12,6 @@ public class LoadingViewController: UIViewController {
     private lazy var activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
     private lazy var alphaBackgroundView = UIView()
     
-    public convenience init() {
-        self.init()
-    }
-    public required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     override public func viewDidLoad() {
         super.viewDidLoad()
         self.addActivityIndicator()
