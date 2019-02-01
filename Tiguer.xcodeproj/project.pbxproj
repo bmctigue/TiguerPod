@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		1AA033A0973FF13090038D48 /* Pods_TiguerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F586D5AA0BAD96821EF598D9 /* Pods_TiguerTests.framework */; };
 		2F2ED3A3AEACA187825264FC /* Pods_Tiguer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB96228E4E933BFFD645F3B /* Pods_Tiguer.framework */; };
-		A857CB3D2203C5EB00FB4BD9 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB3C2203C5EB00FB4BD9 /* TableViewDataSource.swift */; };
-		A857CB402203C5F400FB4BD9 /* UIViewController+AddRemove.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB3E2203C5F400FB4BD9 /* UIViewController+AddRemove.swift */; };
-		A857CB412203C5F400FB4BD9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB3F2203C5F400FB4BD9 /* LoadingViewController.swift */; };
+		A857CB462203C78800FB4BD9 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB422203C78800FB4BD9 /* LocalStore.swift */; };
+		A857CB472203C78800FB4BD9 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB432203C78800FB4BD9 /* TableViewDataSource.swift */; };
+		A857CB482203C78800FB4BD9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB442203C78800FB4BD9 /* LoadingViewController.swift */; };
+		A857CB492203C78800FB4BD9 /* UIViewController+AddRemove.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB452203C78800FB4BD9 /* UIViewController+AddRemove.swift */; };
 		A887B34A2200C49E00870406 /* Tiguer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A887B3402200C49E00870406 /* Tiguer.framework */; };
 		A887B3512200C49E00870406 /* Tiguer.h in Headers */ = {isa = PBXBuildFile; fileRef = A887B3432200C49E00870406 /* Tiguer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A887B3632200C59E00870406 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887B3612200C59E00870406 /* LocalStore.swift */; };
 		A887B36B2200C5B200870406 /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887B3642200C5B200870406 /* URLProtocolStub.swift */; };
 		A887B36D2200C5B200870406 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887B3662200C5B200870406 /* Structs.swift */; };
 		A887B36E2200C5B200870406 /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887B3672200C5B200870406 /* Enumerations.swift */; };
@@ -41,15 +41,15 @@
 		5701699E0ABD826E76FE1781 /* Pods-TiguerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiguerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TiguerTests/Pods-TiguerTests.release.xcconfig"; sourceTree = "<group>"; };
 		5DE465025D9635756F587D58 /* Pods-Tiguer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiguer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tiguer/Pods-Tiguer.release.xcconfig"; sourceTree = "<group>"; };
 		7F47D3CFCBC671CD8CFF7377 /* Pods-Tiguer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiguer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tiguer/Pods-Tiguer.debug.xcconfig"; sourceTree = "<group>"; };
-		A857CB3C2203C5EB00FB4BD9 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
-		A857CB3E2203C5F400FB4BD9 /* UIViewController+AddRemove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddRemove.swift"; sourceTree = "<group>"; };
-		A857CB3F2203C5F400FB4BD9 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		A857CB422203C78800FB4BD9 /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
+		A857CB432203C78800FB4BD9 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		A857CB442203C78800FB4BD9 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		A857CB452203C78800FB4BD9 /* UIViewController+AddRemove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddRemove.swift"; sourceTree = "<group>"; };
 		A887B3402200C49E00870406 /* Tiguer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tiguer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A887B3432200C49E00870406 /* Tiguer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tiguer.h; sourceTree = "<group>"; };
 		A887B3442200C49E00870406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A887B3492200C49E00870406 /* TiguerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TiguerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A887B3502200C49E00870406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A887B3612200C59E00870406 /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
 		A887B3642200C5B200870406 /* URLProtocolStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
 		A887B3662200C5B200870406 /* Structs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
 		A887B3672200C5B200870406 /* Enumerations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
@@ -120,6 +120,10 @@
 		A887B3422200C49E00870406 /* Tiguer */ = {
 			isa = PBXGroup;
 			children = (
+				A857CB442203C78800FB4BD9 /* LoadingViewController.swift */,
+				A857CB422203C78800FB4BD9 /* LocalStore.swift */,
+				A857CB432203C78800FB4BD9 /* TableViewDataSource.swift */,
+				A857CB452203C78800FB4BD9 /* UIViewController+AddRemove.swift */,
 				A887B3722200C5BD00870406 /* DynamicValue.swift */,
 				A887B3692200C5B200870406 /* DispatchingQueues.swift */,
 				A887B3672200C5B200870406 /* Enumerations.swift */,
@@ -127,8 +131,6 @@
 				A887B3662200C5B200870406 /* Structs.swift */,
 				A887B3682200C5B200870406 /* UITableView+ScrollToTop.swift */,
 				A887B3642200C5B200870406 /* URLProtocolStub.swift */,
-				A887B35F2200C59E00870406 /* BusinessLogic */,
-				A887B35A2200C59200870406 /* View */,
 				A887B3432200C49E00870406 /* Tiguer.h */,
 				A887B3442200C49E00870406 /* Info.plist */,
 			);
@@ -143,24 +145,6 @@
 				A887B3742200C6CD00870406 /* TiguerTests-Bridging-Header.h */,
 			);
 			path = TiguerTests;
-			sourceTree = "<group>";
-		};
-		A887B35A2200C59200870406 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A857CB3F2203C5F400FB4BD9 /* LoadingViewController.swift */,
-				A857CB3E2203C5F400FB4BD9 /* UIViewController+AddRemove.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		A887B35F2200C59E00870406 /* BusinessLogic */ = {
-			isa = PBXGroup;
-			children = (
-				A857CB3C2203C5EB00FB4BD9 /* TableViewDataSource.swift */,
-				A887B3612200C59E00870406 /* LocalStore.swift */,
-			);
-			path = BusinessLogic;
 			sourceTree = "<group>";
 		};
 		C9E8A508B93B7222309C93A7 /* Frameworks */ = {
@@ -342,15 +326,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A857CB3D2203C5EB00FB4BD9 /* TableViewDataSource.swift in Sources */,
+				A857CB472203C78800FB4BD9 /* TableViewDataSource.swift in Sources */,
 				A887B3702200C5B200870406 /* DispatchingQueues.swift in Sources */,
 				A887B3712200C5B200870406 /* Protocols.swift in Sources */,
 				A887B36D2200C5B200870406 /* Structs.swift in Sources */,
-				A887B3632200C59E00870406 /* LocalStore.swift in Sources */,
+				A857CB462203C78800FB4BD9 /* LocalStore.swift in Sources */,
 				A887B3732200C5BD00870406 /* DynamicValue.swift in Sources */,
-				A857CB402203C5F400FB4BD9 /* UIViewController+AddRemove.swift in Sources */,
 				A887B36B2200C5B200870406 /* URLProtocolStub.swift in Sources */,
-				A857CB412203C5F400FB4BD9 /* LoadingViewController.swift in Sources */,
+				A857CB482203C78800FB4BD9 /* LoadingViewController.swift in Sources */,
+				A857CB492203C78800FB4BD9 /* UIViewController+AddRemove.swift in Sources */,
 				A887B36F2200C5B200870406 /* UITableView+ScrollToTop.swift in Sources */,
 				A887B36E2200C5B200870406 /* Enumerations.swift in Sources */,
 			);
