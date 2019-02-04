@@ -21,4 +21,5 @@ Pod::Spec.new do |s|
   s.homepage     = "http://tiguer.com"
   s.static_framework = true
   s.dependency "Promis"
+  s.dependency "Cache"
 end
