@@ -24,6 +24,7 @@
 		A887B3732200C5BD00870406 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887B3722200C5BD00870406 /* DynamicValue.swift */; };
 		A887B3762200C6CE00870406 /* DynamicValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887B3752200C6CE00870406 /* DynamicValueTests.swift */; };
 		A887B3782200C71200870406 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A887B3772200C71200870406 /* Podfile */; };
+		A8BD812922088AFB005D5BA6 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD812822088AFB005D5BA6 /* Cache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		A887B3742200C6CD00870406 /* TiguerTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TiguerTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		A887B3752200C6CE00870406 /* DynamicValueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicValueTests.swift; sourceTree = "<group>"; };
 		A887B3772200C71200870406 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A8BD812822088AFB005D5BA6 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		ADF82A81B3C1F4A820062D8C /* Pods-TiguerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiguerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TiguerTests/Pods-TiguerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F586D5AA0BAD96821EF598D9 /* Pods_TiguerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiguerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -133,6 +135,7 @@
 				A887B3642200C5B200870406 /* URLProtocolStub.swift */,
 				A887B3432200C49E00870406 /* Tiguer.h */,
 				A887B3442200C49E00870406 /* Info.plist */,
+				A8BD812822088AFB005D5BA6 /* Cache.swift */,
 			);
 			path = Tiguer;
 			sourceTree = "<group>";
@@ -290,10 +293,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TiguerTests/Pods-TiguerTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
 				"${BUILT_PRODUCTS_DIR}/Promis/Promis.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promis.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +341,7 @@
 				A857CB482203C78800FB4BD9 /* LoadingViewController.swift in Sources */,
 				A857CB492203C78800FB4BD9 /* UIViewController+AddRemove.swift in Sources */,
 				A887B36F2200C5B200870406 /* UITableView+ScrollToTop.swift in Sources */,
+				A8BD812922088AFB005D5BA6 /* Cache.swift in Sources */,
 				A887B36E2200C5B200870406 /* Enumerations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

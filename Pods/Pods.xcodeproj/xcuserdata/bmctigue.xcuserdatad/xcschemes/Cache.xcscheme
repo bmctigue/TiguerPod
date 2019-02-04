@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9BD12F5735111D0983FE172DDFD89727"
-               BlueprintName = "Promis"
+               BlueprintIdentifier = "4F4DE451670EB78DB389F3A5DEA60452"
+               BlueprintName = "Cache"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "Promis.framework">
+               BuildableName = "Cache.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

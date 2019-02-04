@@ -3,6 +3,7 @@ use_frameworks!
 
 target 'Tiguer' do
     pod 'Promis'
+    pod 'Cache'
     
     target 'TiguerTests' do
         inherit! :search_paths

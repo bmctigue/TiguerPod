@@ -1,16 +1,20 @@
 PODS:
+  - Cache (5.2.0)
   - Promis (2.0.0)
 
 DEPENDENCIES:
+  - Cache
   - Promis
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Cache
     - Promis
 
 SPEC CHECKSUMS:
+  Cache: 807c5d86d01a177f06ede9865add3aea269bbfd4
   Promis: 92878a15a9d146622b1815e137638e2c0be974ff
 
-PODFILE CHECKSUM: 875f28e9cace5c217ed498aeeec590e52afb960c
+PODFILE CHECKSUM: 82d600653ade1949ec03e6efbdaa704a3e2fbd56
 
 COCOAPODS: 1.5.2
