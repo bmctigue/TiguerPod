@@ -25,6 +25,7 @@
 		A887B3762200C6CE00870406 /* DynamicValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887B3752200C6CE00870406 /* DynamicValueTests.swift */; };
 		A887B3782200C71200870406 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A887B3772200C71200870406 /* Podfile */; };
 		A8BD812922088AFB005D5BA6 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD812822088AFB005D5BA6 /* Cache.swift */; };
+		A8BD812B220894DD005D5BA6 /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD812A220894DD005D5BA6 /* CacheTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		A887B3752200C6CE00870406 /* DynamicValueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicValueTests.swift; sourceTree = "<group>"; };
 		A887B3772200C71200870406 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A8BD812822088AFB005D5BA6 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		A8BD812A220894DD005D5BA6 /* CacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheTests.swift; sourceTree = "<group>"; };
 		ADF82A81B3C1F4A820062D8C /* Pods-TiguerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiguerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TiguerTests/Pods-TiguerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F586D5AA0BAD96821EF598D9 /* Pods_TiguerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiguerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -144,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				A887B3752200C6CE00870406 /* DynamicValueTests.swift */,
+				A8BD812A220894DD005D5BA6 /* CacheTests.swift */,
 				A887B3502200C49E00870406 /* Info.plist */,
 				A887B3742200C6CD00870406 /* TiguerTests-Bridging-Header.h */,
 			);
@@ -350,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8BD812B220894DD005D5BA6 /* CacheTests.swift in Sources */,
 				A887B3762200C6CE00870406 /* DynamicValueTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

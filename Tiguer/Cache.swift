@@ -14,7 +14,7 @@ public final class BaseCache<CacheObject: Codable>: CacheProtocol {
     private lazy var memoryConfig = MemoryConfig(expiry: .never, countLimit: 10, totalCostLimit: 10)
     private var testingState: TestingState
     
-    public init(_ testingState: TestingState) {
+    public init(_ testingState: TestingState = .notTesting) {
         self.testingState = testingState
     }
     
