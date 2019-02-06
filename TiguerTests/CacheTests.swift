@@ -24,7 +24,8 @@ class CacheTests: XCTestCase {
     }
     
     func testAddObjectToCacheTesting() {
-        let cache = BaseCache<Set<Int>>(TestingState.testing)
+        let cache = BaseCache<Set<Int>>()
+        cache.updateTestingState(TestingState.testing)
         cache.removeObject(testKey)
         cache.setObject(set, key: testKey)
         let cachedSet: Set<Int>? = cache.getObject(testKey)
