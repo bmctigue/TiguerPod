@@ -42,6 +42,7 @@ public protocol InteractorProtocol: class {
 public protocol PresenterProtocol {
     associatedtype Model
     associatedtype ViewModel
+    func updateViewModels(response: Response<Any>)
 }
 
 public protocol NetworkSession {
