@@ -9,15 +9,15 @@
 import Foundation
 import Promis
 
-struct RemoteStore: StoreProtocol {
+public struct RemoteStore: StoreProtocol {
     
     private let session: URLSession
     
-    init(session: URLSession = URLSession.shared) {
+    public init(session: URLSession = URLSession.shared) {
         self.session = session
     }
     
-    func fetchData(_ url: URL) -> Future<Store.Result> {
+    public func fetchData(_ url: URL) -> Future<Store.Result> {
         let promise = Promise<Store.Result>()
         let postData = NSData(data: "{}".data(using: String.Encoding.utf8)!)
         

@@ -9,7 +9,7 @@
 import Foundation
 import Promis
 
-final class Service<Model: Codable, Adapter: DataAdapterProtocol>: ServiceProtocol {
+public final class Service<Model: Codable, Adapter: DataAdapterProtocol>: ServiceProtocol {
     
     private var store: StoreProtocol
     private var dataAdapter: Adapter
@@ -17,14 +17,14 @@ final class Service<Model: Codable, Adapter: DataAdapterProtocol>: ServiceProtoc
     private var models: [Model] = []
     private lazy var cache = BaseCache<[Model]>()
     
-    init(_ store: StoreProtocol, dataAdapter: Adapter, cacheKey: String) {
+    public init(_ store: StoreProtocol, dataAdapter: Adapter, cacheKey: String) {
         self.store = store
         self.dataAdapter = dataAdapter
         self.cacheKey = cacheKey
         self.models = cache.getObject(cacheKey) ?? []
     }
     
-    func fetchItems(_ request: Request, url: URL, completionHandler: @escaping ([Any]) -> Void) {
+    public func fetchItems(_ request: Request, url: URL, completionHandler: @escaping ([Any]) -> Void) {
         let force = request.params[Constants.forceKey]
         if models.isEmpty || force != nil {
             store.fetchData(url).thenWithResult { [weak self] (storeResult: Store.Result) -> Future<DataAdapter.Result<Model>> in
@@ -56,7 +56,7 @@ final class Service<Model: Codable, Adapter: DataAdapterProtocol>: ServiceProtoc
         }
     }
     
-    func updateCacheTestingState(_ testingState: TestingState) {
+    public func updateCacheTestingState(_ testingState: TestingState) {
         self.cache.updateTestingState(testingState)
     }
 }

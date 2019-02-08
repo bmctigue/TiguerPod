@@ -8,6 +8,6 @@
 
 import Foundation
 
-enum Constants {
+public enum Constants {
     static let forceKey = "force"
 }
