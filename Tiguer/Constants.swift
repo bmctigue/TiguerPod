@@ -8,6 +8,8 @@
 
 import Foundation
 
-public enum Constants {
-    public static let forceKey = "force"
+enum Tiguer {
+    public enum Constants {
+        public static let forceKey = "force"
+    }
 }

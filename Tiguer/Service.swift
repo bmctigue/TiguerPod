@@ -25,7 +25,7 @@ public final class Service<Model: Codable, Adapter: DataAdapterProtocol>: Servic
     }
     
     public func fetchItems(_ request: Request, url: URL, completionHandler: @escaping ([Any]) -> Void) {
-        let force = request.params[Constants.forceKey]
+        let force = request.params[Tiguer.Constants.forceKey]
         if models.isEmpty || force != nil {
             store.fetchData(url).thenWithResult { [weak self] (storeResult: Store.Result) -> Future<DataAdapter.Result<Model>> in
                 switch storeResult {

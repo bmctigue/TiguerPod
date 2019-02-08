@@ -58,7 +58,7 @@ extension URLGenerator {
             return nil
         }
         var queryItems = [URLQueryItem]()
-        for (key, value) in request.params where key != Constants.forceKey {
+        for (key, value) in request.params where key != Tiguer.Constants.forceKey {
             queryItems.append(URLQueryItem(name: key, value: value))
         }
         return queryItems
