@@ -9,5 +9,5 @@
 import Foundation
 
 public enum Constants {
-    static let forceKey = "force"
+    public static let forceKey = "force"
 }
