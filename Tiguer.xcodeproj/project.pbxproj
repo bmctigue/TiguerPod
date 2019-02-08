@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1AA033A0973FF13090038D48 /* Pods_TiguerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F586D5AA0BAD96821EF598D9 /* Pods_TiguerTests.framework */; };
 		2F2ED3A3AEACA187825264FC /* Pods_Tiguer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB96228E4E933BFFD645F3B /* Pods_Tiguer.framework */; };
+		A8049E38220DF00600710599 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8049E37220DF00600710599 /* Constants.swift */; };
+		A8049E3A220DF03C00710599 /* RemoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8049E39220DF03C00710599 /* RemoteStore.swift */; };
+		A8049E3C220DF0C900710599 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8049E3B220DF0C900710599 /* Service.swift */; };
 		A857CB462203C78800FB4BD9 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB422203C78800FB4BD9 /* LocalStore.swift */; };
 		A857CB472203C78800FB4BD9 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB432203C78800FB4BD9 /* TableViewDataSource.swift */; };
 		A857CB482203C78800FB4BD9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB442203C78800FB4BD9 /* LoadingViewController.swift */; };
@@ -43,6 +46,9 @@
 		5701699E0ABD826E76FE1781 /* Pods-TiguerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiguerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TiguerTests/Pods-TiguerTests.release.xcconfig"; sourceTree = "<group>"; };
 		5DE465025D9635756F587D58 /* Pods-Tiguer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiguer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tiguer/Pods-Tiguer.release.xcconfig"; sourceTree = "<group>"; };
 		7F47D3CFCBC671CD8CFF7377 /* Pods-Tiguer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiguer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tiguer/Pods-Tiguer.debug.xcconfig"; sourceTree = "<group>"; };
+		A8049E37220DF00600710599 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A8049E39220DF03C00710599 /* RemoteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteStore.swift; sourceTree = "<group>"; };
+		A8049E3B220DF0C900710599 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		A857CB422203C78800FB4BD9 /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
 		A857CB432203C78800FB4BD9 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		A857CB442203C78800FB4BD9 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +132,7 @@
 			children = (
 				A857CB442203C78800FB4BD9 /* LoadingViewController.swift */,
 				A857CB422203C78800FB4BD9 /* LocalStore.swift */,
+				A8049E39220DF03C00710599 /* RemoteStore.swift */,
 				A857CB432203C78800FB4BD9 /* TableViewDataSource.swift */,
 				A857CB452203C78800FB4BD9 /* UIViewController+AddRemove.swift */,
 				A887B3722200C5BD00870406 /* DynamicValue.swift */,
@@ -138,6 +145,8 @@
 				A887B3432200C49E00870406 /* Tiguer.h */,
 				A887B3442200C49E00870406 /* Info.plist */,
 				A8BD812822088AFB005D5BA6 /* Cache.swift */,
+				A8049E37220DF00600710599 /* Constants.swift */,
+				A8049E3B220DF0C900710599 /* Service.swift */,
 			);
 			path = Tiguer;
 			sourceTree = "<group>";
@@ -336,16 +345,19 @@
 			files = (
 				A857CB472203C78800FB4BD9 /* TableViewDataSource.swift in Sources */,
 				A887B3702200C5B200870406 /* DispatchingQueues.swift in Sources */,
+				A8049E3C220DF0C900710599 /* Service.swift in Sources */,
 				A887B3712200C5B200870406 /* Protocols.swift in Sources */,
 				A887B36D2200C5B200870406 /* Structs.swift in Sources */,
 				A857CB462203C78800FB4BD9 /* LocalStore.swift in Sources */,
 				A887B3732200C5BD00870406 /* DynamicValue.swift in Sources */,
 				A887B36B2200C5B200870406 /* URLProtocolStub.swift in Sources */,
+				A8049E38220DF00600710599 /* Constants.swift in Sources */,
 				A857CB482203C78800FB4BD9 /* LoadingViewController.swift in Sources */,
 				A857CB492203C78800FB4BD9 /* UIViewController+AddRemove.swift in Sources */,
 				A887B36F2200C5B200870406 /* UITableView+ScrollToTop.swift in Sources */,
 				A8BD812922088AFB005D5BA6 /* Cache.swift in Sources */,
 				A887B36E2200C5B200870406 /* Enumerations.swift in Sources */,
+				A8049E3A220DF03C00710599 /* RemoteStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
