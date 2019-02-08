@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Tiguer {
+public enum Tiguer {
     public enum Constants {
         public static let forceKey = "force"
     }
