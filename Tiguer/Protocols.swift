@@ -36,7 +36,7 @@ public protocol ServiceProtocol: class {
 }
 
 public protocol InteractorProtocol: class {
-    func fetchItems(_ request: Request)
+    func fetchItems(_ request: Request, url: URL)
 }
 
 public protocol PresenterProtocol {
