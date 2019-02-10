@@ -30,6 +30,7 @@
 		A887B3782200C71200870406 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A887B3772200C71200870406 /* Podfile */; };
 		A8BD812922088AFB005D5BA6 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD812822088AFB005D5BA6 /* Cache.swift */; };
 		A8BD812B220894DD005D5BA6 /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD812A220894DD005D5BA6 /* CacheTests.swift */; };
+		A8E901762210942E002152BC /* StoryboardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E901752210942E002152BC /* StoryboardFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		A887B3772200C71200870406 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A8BD812822088AFB005D5BA6 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		A8BD812A220894DD005D5BA6 /* CacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheTests.swift; sourceTree = "<group>"; };
+		A8E901752210942E002152BC /* StoryboardFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardFactory.swift; sourceTree = "<group>"; };
 		ADF82A81B3C1F4A820062D8C /* Pods-TiguerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiguerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TiguerTests/Pods-TiguerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F586D5AA0BAD96821EF598D9 /* Pods_TiguerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiguerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -150,6 +152,7 @@
 				A8049E37220DF00600710599 /* Constants.swift */,
 				A8049E3B220DF0C900710599 /* Service.swift */,
 				A8049E3D220DF99800710599 /* Interactor.swift */,
+				A8E901752210942E002152BC /* StoryboardFactory.swift */,
 			);
 			path = Tiguer;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				A857CB462203C78800FB4BD9 /* LocalStore.swift in Sources */,
 				A8049E3E220DF99800710599 /* Interactor.swift in Sources */,
 				A887B3732200C5BD00870406 /* DynamicValue.swift in Sources */,
+				A8E901762210942E002152BC /* StoryboardFactory.swift in Sources */,
 				A887B36B2200C5B200870406 /* URLProtocolStub.swift in Sources */,
 				A8049E38220DF00600710599 /* Constants.swift in Sources */,
 				A857CB482203C78800FB4BD9 /* LoadingViewController.swift in Sources */,
