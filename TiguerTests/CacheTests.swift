@@ -1,6 +1,6 @@
 //
 //  CacheTests.swift
-//  TMDBTests
+//  TiguerTests
 //
 //  Created by Bruce McTigue on 1/8/19.
 //  Copyright © 2019 tiguer. All rights reserved.
