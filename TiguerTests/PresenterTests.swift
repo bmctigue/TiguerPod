@@ -9,18 +9,14 @@
 import XCTest
 @testable import Tiguer
 
-struct TestViewModel {
-    let testId: Int
-    init(testId: Int) {
-        self.testId = testId
-    }
-}
-
-class TestPresenter<Model, ViewModel>: Tiguer.Presenter<Model, ViewModel> {
+class TestPresenter<Model>: Tiguer.Presenter<Model> {
+    
+    typealias ViewModel = SampleViewModel
+    
     override var baseViewModels: [ViewModel] {
         var resultModels = [ViewModel]()
         for _ in models {
-            let displayedModel = TestViewModel(testId: 0) as! ViewModel
+            let displayedModel = ViewModel(sampleId: 0)
             resultModels.append(displayedModel)
         }
         return resultModels
@@ -30,27 +26,26 @@ class TestPresenter<Model, ViewModel>: Tiguer.Presenter<Model, ViewModel> {
 class PresenterTests: XCTestCase {
     
     typealias Model = String
-    typealias ViewModel = TestViewModel
     
     let model1: Model = "Test1"
     let model2: Model = "Test2"
     
     func testDisplayedMovies() {
-        let sut = TestPresenter<Model, ViewModel>([], main: SyncQueue.global, background: SyncQueue.background)
+        let sut = TestPresenter<Model>([], main: SyncQueue.global, background: SyncQueue.background)
         sut.updateViewModelsInBackground()
         XCTAssert(sut.getDynamicModels().value.count == 0)
     }
     
     func testInitWithDisplayedMovies() {
         let models = [model1,model2]
-        let sut = TestPresenter<Model, ViewModel>(models, main: SyncQueue.global, background: SyncQueue.background)
+        let sut = TestPresenter<Model>(models, main: SyncQueue.global, background: SyncQueue.background)
         sut.updateViewModelsInBackground()
         XCTAssert(sut.getDynamicModels().value.count == models.count)
     }
 
     func testUpdateDisplayedMovies() {
         let models = [model1,model2]
-        let sut = TestPresenter<Model, ViewModel>(models, main: SyncQueue.global, background: SyncQueue.background)
+        let sut = TestPresenter<Model>(models, main: SyncQueue.global, background: SyncQueue.background)
         let response = Response(models)
         sut.updateViewModels(response)
         let dynamicModels = sut.getDynamicModels()
@@ -59,7 +54,7 @@ class PresenterTests: XCTestCase {
 
     func testGetModels() {
         let models = [model1,model2]
-        let sut = TestPresenter<Model, ViewModel>(models, main: SyncQueue.global, background: SyncQueue.background)
+        let sut = TestPresenter<Model>(models, main: SyncQueue.global, background: SyncQueue.background)
         XCTAssert(sut.getModels().count == models.count)
     }
 }

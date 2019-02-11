@@ -9,7 +9,9 @@
 import Foundation
 
 extension Tiguer {
-    open class Presenter<Model, ViewModel>: PresenterProtocol {
+    open class Presenter<Model>: PresenterProtocol {
+        
+        public typealias ViewModel = SampleViewModel
         
         public var models: [Model]
         public var viewModels: [ViewModel] = []
