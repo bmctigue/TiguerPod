@@ -30,7 +30,7 @@ extension Tiguer {
             return []
         }
         
-        private func updatedViewModels(completionHandler: @escaping ([ViewModel]) -> Void) {
+        open func updatedViewModels(completionHandler: @escaping ([ViewModel]) -> Void) {
             background.dispatch {
                 let resultModels = self.viewModels
                 self.main.dispatch {
