@@ -17,6 +17,8 @@
 		A857CB472203C78800FB4BD9 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB432203C78800FB4BD9 /* TableViewDataSource.swift */; };
 		A857CB482203C78800FB4BD9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB442203C78800FB4BD9 /* LoadingViewController.swift */; };
 		A857CB492203C78800FB4BD9 /* UIViewController+AddRemove.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB452203C78800FB4BD9 /* UIViewController+AddRemove.swift */; };
+		A8693E98221227380018CDEB /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8693E97221227380018CDEB /* Presenter.swift */; };
+		A8693E9A221229490018CDEB /* PresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8693E99221229490018CDEB /* PresenterTests.swift */; };
 		A881493D2211ADEB0072162F /* StoryboardFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881493C2211ADEB0072162F /* StoryboardFactoryTests.swift */; };
 		A881493F2211AE6A0072162F /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A881493E2211AE6A0072162F /* Test.storyboard */; };
 		A88149412211B36D0072162F /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A881493E2211AE6A0072162F /* Test.storyboard */; };
@@ -65,6 +67,8 @@
 		A857CB432203C78800FB4BD9 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		A857CB442203C78800FB4BD9 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		A857CB452203C78800FB4BD9 /* UIViewController+AddRemove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddRemove.swift"; sourceTree = "<group>"; };
+		A8693E97221227380018CDEB /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		A8693E99221229490018CDEB /* PresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterTests.swift; sourceTree = "<group>"; };
 		A881493C2211ADEB0072162F /* StoryboardFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardFactoryTests.swift; sourceTree = "<group>"; };
 		A881493E2211AE6A0072162F /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
 		A88149422211B6A60072162F /* testJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testJson.json; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 				A881493E2211AE6A0072162F /* Test.storyboard */,
 				A88149422211B6A60072162F /* testJson.json */,
 				A88149482211B7B10072162F /* Assets.xcassets */,
+				A8693E97221227380018CDEB /* Presenter.swift */,
 			);
 			path = Tiguer;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 			children = (
 				A881494C2211BA9F0072162F /* LocalStoreTests.swift */,
 				A881494E2211BD080072162F /* RemoteStoreTests.swift */,
+				A8693E99221229490018CDEB /* PresenterTests.swift */,
 				A887B3752200C6CE00870406 /* DynamicValueTests.swift */,
 				A8BD812A220894DD005D5BA6 /* CacheTests.swift */,
 				A881493C2211ADEB0072162F /* StoryboardFactoryTests.swift */,
@@ -376,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8693E98221227380018CDEB /* Presenter.swift in Sources */,
 				A857CB472203C78800FB4BD9 /* TableViewDataSource.swift in Sources */,
 				A887B3702200C5B200870406 /* DispatchingQueues.swift in Sources */,
 				A8049E3C220DF0C900710599 /* Service.swift in Sources */,
@@ -405,6 +412,7 @@
 				A8BD812B220894DD005D5BA6 /* CacheTests.swift in Sources */,
 				A887B3762200C6CE00870406 /* DynamicValueTests.swift in Sources */,
 				A881494D2211BA9F0072162F /* LocalStoreTests.swift in Sources */,
+				A8693E9A221229490018CDEB /* PresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
