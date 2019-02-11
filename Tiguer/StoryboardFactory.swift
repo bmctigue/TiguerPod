@@ -9,6 +9,9 @@
 import UIKit
 
 public struct StoryboardFactory: StoryboardFactoryProtocol {
+    
+    public init() {}
+    
     public func create(name: String) -> UIStoryboard {
         let storyboard = UIStoryboard(name: name, bundle: nil)
         return storyboard
