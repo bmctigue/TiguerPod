@@ -12,7 +12,7 @@ extension Tiguer {
     open class Presenter<Model, ViewModel>: PresenterProtocol {
         
         public var models: [Model]
-        private var viewModels: [ViewModel] = []
+        public var viewModels: [ViewModel] = []
         private var dynamicModels: DynamicValue<[ViewModel]> = DynamicValue([ViewModel]())
         
         public var main: Dispatching
