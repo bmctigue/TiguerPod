@@ -9,8 +9,8 @@
 import Foundation
 import Promis
 
-public extension Tiguer {
-    public class Service<Model: Codable, Adapter: DataAdapterProtocol>: ServiceProtocol {
+extension Tiguer {
+    open class Service<Model: Codable, Adapter: DataAdapterProtocol>: ServiceProtocol {
         
         private var store: StoreProtocol
         private var dataAdapter: Adapter

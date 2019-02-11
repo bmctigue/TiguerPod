@@ -8,8 +8,8 @@
 
 import Foundation
 
-public extension Tiguer {
-    public class Interactor<Model, Presenter: PresenterProtocol, Service: ServiceProtocol>: InteractorProtocol {
+extension Tiguer {
+    open class Interactor<Model, Presenter: PresenterProtocol, Service: ServiceProtocol>: InteractorProtocol {
         
         private var service: Service
         private var presenter: Presenter
