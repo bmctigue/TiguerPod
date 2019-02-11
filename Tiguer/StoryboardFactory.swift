@@ -8,8 +8,8 @@
 
 import UIKit
 
-struct StoryboardFactory: StoryboardFactoryProtocol {
-    func create(name: String) -> UIStoryboard {
+public struct StoryboardFactory: StoryboardFactoryProtocol {
+    public func create(name: String) -> UIStoryboard {
         let storyboard = UIStoryboard(name: name, bundle: nil)
         return storyboard
     }
