@@ -45,7 +45,7 @@ extension Tiguer {
             self.updateViewModelsInBackground()
         }
         
-        func updateViewModelsInBackground() {
+        public func updateViewModelsInBackground() {
             updatedViewModels { [weak self] results in
                 self?.dynamicModels.value = results
             }
