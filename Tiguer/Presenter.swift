@@ -25,7 +25,7 @@ extension Tiguer {
             self.viewModels = baseViewModels
         }
         
-        var baseViewModels: [ViewModel] {
+        public var baseViewModels: [ViewModel] {
             assert(false, "Presenter baseViewModels is not implemented")
             return []
         }
