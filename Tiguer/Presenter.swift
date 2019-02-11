@@ -15,8 +15,8 @@ extension Tiguer {
         private var viewModels: [ViewModel] = []
         private var dynamicModels: DynamicValue<[ViewModel]> = DynamicValue([ViewModel]())
         
-        private var main: Dispatching
-        private var background: Dispatching
+        public var main: Dispatching
+        public var background: Dispatching
         
         public init(_ models: [Model] = [Model](), main: Dispatching = AsyncQueue.main, background: Dispatching = AsyncQueue.background) {
             self.models = models
