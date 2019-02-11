@@ -8,7 +8,7 @@
 
 import Foundation
 
-public final class Interactor<Model, Presenter: PresenterProtocol, Service: ServiceProtocol>: InteractorProtocol {
+public class Interactor<Model, Presenter: PresenterProtocol, Service: ServiceProtocol>: InteractorProtocol {
     
     private var service: Service
     private var presenter: Presenter

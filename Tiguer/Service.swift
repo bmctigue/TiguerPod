@@ -9,7 +9,7 @@
 import Foundation
 import Promis
 
-public final class Service<Model: Codable, Adapter: DataAdapterProtocol>: ServiceProtocol {
+public class Service<Model: Codable, Adapter: DataAdapterProtocol>: ServiceProtocol {
     
     private var store: StoreProtocol
     private var dataAdapter: Adapter
