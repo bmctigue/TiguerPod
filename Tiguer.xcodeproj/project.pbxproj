@@ -17,6 +17,15 @@
 		A857CB472203C78800FB4BD9 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB432203C78800FB4BD9 /* TableViewDataSource.swift */; };
 		A857CB482203C78800FB4BD9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB442203C78800FB4BD9 /* LoadingViewController.swift */; };
 		A857CB492203C78800FB4BD9 /* UIViewController+AddRemove.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB452203C78800FB4BD9 /* UIViewController+AddRemove.swift */; };
+		A881493D2211ADEB0072162F /* StoryboardFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881493C2211ADEB0072162F /* StoryboardFactoryTests.swift */; };
+		A881493F2211AE6A0072162F /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A881493E2211AE6A0072162F /* Test.storyboard */; };
+		A88149412211B36D0072162F /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A881493E2211AE6A0072162F /* Test.storyboard */; };
+		A88149432211B6A60072162F /* testJson.json in Resources */ = {isa = PBXBuildFile; fileRef = A88149422211B6A60072162F /* testJson.json */; };
+		A88149442211B6A60072162F /* testJson.json in Resources */ = {isa = PBXBuildFile; fileRef = A88149422211B6A60072162F /* testJson.json */; };
+		A88149492211B7B10072162F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88149482211B7B10072162F /* Assets.xcassets */; };
+		A881494A2211B7B10072162F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A88149482211B7B10072162F /* Assets.xcassets */; };
+		A881494D2211BA9F0072162F /* LocalStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881494C2211BA9F0072162F /* LocalStoreTests.swift */; };
+		A881494F2211BD080072162F /* RemoteStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881494E2211BD080072162F /* RemoteStoreTests.swift */; };
 		A887B34A2200C49E00870406 /* Tiguer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A887B3402200C49E00870406 /* Tiguer.framework */; };
 		A887B3512200C49E00870406 /* Tiguer.h in Headers */ = {isa = PBXBuildFile; fileRef = A887B3432200C49E00870406 /* Tiguer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A887B36B2200C5B200870406 /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887B3642200C5B200870406 /* URLProtocolStub.swift */; };
@@ -56,6 +65,12 @@
 		A857CB432203C78800FB4BD9 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		A857CB442203C78800FB4BD9 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		A857CB452203C78800FB4BD9 /* UIViewController+AddRemove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddRemove.swift"; sourceTree = "<group>"; };
+		A881493C2211ADEB0072162F /* StoryboardFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardFactoryTests.swift; sourceTree = "<group>"; };
+		A881493E2211AE6A0072162F /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
+		A88149422211B6A60072162F /* testJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testJson.json; sourceTree = "<group>"; };
+		A88149482211B7B10072162F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A881494C2211BA9F0072162F /* LocalStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStoreTests.swift; sourceTree = "<group>"; };
+		A881494E2211BD080072162F /* RemoteStoreTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteStoreTests.swift; sourceTree = "<group>"; };
 		A887B3402200C49E00870406 /* Tiguer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tiguer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A887B3432200C49E00870406 /* Tiguer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tiguer.h; sourceTree = "<group>"; };
 		A887B3442200C49E00870406 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -153,6 +168,9 @@
 				A8049E3B220DF0C900710599 /* Service.swift */,
 				A8049E3D220DF99800710599 /* Interactor.swift */,
 				A8E901752210942E002152BC /* StoryboardFactory.swift */,
+				A881493E2211AE6A0072162F /* Test.storyboard */,
+				A88149422211B6A60072162F /* testJson.json */,
+				A88149482211B7B10072162F /* Assets.xcassets */,
 			);
 			path = Tiguer;
 			sourceTree = "<group>";
@@ -160,8 +178,11 @@
 		A887B34D2200C49E00870406 /* TiguerTests */ = {
 			isa = PBXGroup;
 			children = (
+				A881494C2211BA9F0072162F /* LocalStoreTests.swift */,
+				A881494E2211BD080072162F /* RemoteStoreTests.swift */,
 				A887B3752200C6CE00870406 /* DynamicValueTests.swift */,
 				A8BD812A220894DD005D5BA6 /* CacheTests.swift */,
+				A881493C2211ADEB0072162F /* StoryboardFactoryTests.swift */,
 				A887B3502200C49E00870406 /* Info.plist */,
 				A887B3742200C6CD00870406 /* TiguerTests-Bridging-Header.h */,
 			);
@@ -272,6 +293,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A88149432211B6A60072162F /* testJson.json in Resources */,
+				A88149492211B7B10072162F /* Assets.xcassets in Resources */,
+				A881493F2211AE6A0072162F /* Test.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +303,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A88149412211B36D0072162F /* Test.storyboard in Resources */,
+				A88149442211B6A60072162F /* testJson.json in Resources */,
+				A881494A2211B7B10072162F /* Assets.xcassets in Resources */,
 				A887B3782200C71200870406 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,8 +400,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A881494F2211BD080072162F /* RemoteStoreTests.swift in Sources */,
+				A881493D2211ADEB0072162F /* StoryboardFactoryTests.swift in Sources */,
 				A8BD812B220894DD005D5BA6 /* CacheTests.swift in Sources */,
 				A887B3762200C6CE00870406 /* DynamicValueTests.swift in Sources */,
+				A881494D2211BA9F0072162F /* LocalStoreTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
