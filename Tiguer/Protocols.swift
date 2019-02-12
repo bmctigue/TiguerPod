@@ -45,8 +45,12 @@ public protocol InteractorProtocol: class {
 
 public protocol PresenterProtocol {
     associatedtype Model
-    associatedtype ViewModel
     func updateViewModels(_ response: Response<Model>)
+}
+
+public protocol FilterProtocol {
+    associatedtype ViewModel
+    func filter<ViewModel>(_ viewModels: [ViewModel]) -> [ViewModel]
 }
 
 public protocol NetworkSession {
