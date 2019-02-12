@@ -174,8 +174,8 @@
 				A8E901752210942E002152BC /* StoryboardFactory.swift */,
 				A881493E2211AE6A0072162F /* Test.storyboard */,
 				A88149422211B6A60072162F /* testJson.json */,
-				A88149482211B7B10072162F /* Assets.xcassets */,
 				A8693E97221227380018CDEB /* Presenter.swift */,
+				A88149482211B7B10072162F /* Assets.xcassets */,
 			);
 			path = Tiguer;
 			sourceTree = "<group>";
