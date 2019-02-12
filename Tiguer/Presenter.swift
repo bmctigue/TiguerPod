@@ -9,23 +9,21 @@
 import Foundation
 
 extension Tiguer {
-    open class Presenter<Model, ViewModel: Comparable, Filter: FilterProtocol>: PresenterProtocol {
+    open class Presenter<Model, ViewModel: Comparable>: PresenterProtocol {
         
         public var models: [Model]
         public var viewModels: [ViewModel] = []
         private var dynamicModels: DynamicValue<[ViewModel]> = DynamicValue([ViewModel]())
         
-        public var filter: Filter?
         public var main: Dispatching
         public var background: Dispatching
+        public var filterHandler: FilterHandler<ViewModel>?
         
-        
-        public init(_ models: [Model] = [Model](), filter: Filter?, main: Dispatching = AsyncQueue.main, background: Dispatching = AsyncQueue.background) {
+        public init(_ models: [Model] = [Model](), main: Dispatching = AsyncQueue.main, background: Dispatching = AsyncQueue.background) {
             self.models = models
             self.main = main
             self.background = background
             self.viewModels = baseViewModels
-            self.filter = filter
         }
         
         open var baseViewModels: [ViewModel] {
@@ -36,8 +34,8 @@ extension Tiguer {
         open func updatedViewModels(completionHandler: @escaping ([ViewModel]) -> Void) {
             background.dispatch {
                 var resultModels = self.viewModels
-                if let filter = self.filter {
-                    resultModels = filter.filter(resultModels)
+                if let filterHandler = self.filterHandler {
+                    resultModels = filterHandler(resultModels)
                 }
                 self.main.dispatch {
                     completionHandler(resultModels)

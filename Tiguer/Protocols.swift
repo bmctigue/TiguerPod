@@ -10,6 +10,7 @@ import UIKit
 import Promis
 
 public typealias VCBuilderBlock = ((UIViewController) -> Void)
+public typealias FilterHandler<ViewModel> = (([ViewModel]) -> [ViewModel])
 
 public protocol BaseBuilder: class {
     func run()
@@ -43,14 +44,9 @@ public protocol InteractorProtocol: class {
     func fetchItems(_ request: Request, url: URL)
 }
 
-public protocol PresenterProtocol {
+public protocol PresenterProtocol: class {
     associatedtype Model
     func updateViewModels(_ response: Response<Model>)
-}
-
-public protocol FilterProtocol {
-    associatedtype ViewModel
-    func filter<ViewModel: Comparable>(_ viewModels: [ViewModel]) -> [ViewModel]
 }
 
 public protocol NetworkSession {

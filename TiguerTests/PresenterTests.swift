@@ -9,7 +9,7 @@
 import XCTest
 @testable import Tiguer
 
-class TestPresenter<Model, ViewModel: Comparable, Filter: FilterProtocol>: Tiguer.Presenter<Model, ViewModel, Filter> {
+class TestPresenter<Model, ViewModel: Comparable>: Tiguer.Presenter<Model, ViewModel> {
     
     override var baseViewModels: [ViewModel] {
         var resultModels = [ViewModel]()
@@ -21,33 +21,26 @@ class TestPresenter<Model, ViewModel: Comparable, Filter: FilterProtocol>: Tigue
     }
 }
 
-class TestFilter: FilterProtocol {
-    typealias ViewModel = SampleViewModel
-    func filter<ViewModel:Comparable>(_ viewModels: [ViewModel]) -> [ViewModel] {
-        return viewModels
-    }
-}
-
 class PresenterTests: XCTestCase {
     
     let models = ["Test1","Test2"]
     
     func testDisplayedMovies() {
-        let sut = TestPresenter<String, SampleViewModel, TestFilter>([], filter: nil, main: SyncQueue.global, background: SyncQueue.background)
+        let sut = TestPresenter<String, SampleViewModel>([], main: SyncQueue.global, background: SyncQueue.background)
         sut.updateViewModelsInBackground()
         XCTAssert(sut.getDynamicModels().value.count == 0)
     }
     
     func testInitWithDisplayedMovies() {
-        let filter = TestFilter()
-        let sut = TestPresenter<String, SampleViewModel, TestFilter>(models, filter: filter, main: SyncQueue.global, background: SyncQueue.background)
+        let sut = TestPresenter<String, SampleViewModel>(models, main: SyncQueue.global, background: SyncQueue.background)
         sut.updateViewModelsInBackground()
         XCTAssert(sut.getDynamicModels().value.count == models.count)
     }
 
     func testUpdateDisplayedMovies() {
-        let filter = TestFilter()
-        let sut = TestPresenter<String, SampleViewModel, TestFilter>(models, filter: filter, main: SyncQueue.global, background: SyncQueue.background)
+        let sut = TestPresenter<String, SampleViewModel>(models, main: SyncQueue.global, background: SyncQueue.background)
+        let filterHandler: FilterHandler = { (viewModels:[SampleViewModel]) in return viewModels }
+        sut.filterHandler = filterHandler
         let response = Response(models)
         sut.updateViewModels(response)
         let dynamicModels = sut.getDynamicModels()
@@ -55,8 +48,7 @@ class PresenterTests: XCTestCase {
     }
 
     func testGetModels() {
-        let filter = TestFilter()
-        let sut = TestPresenter<String, SampleViewModel, TestFilter>(models, filter: filter, main: SyncQueue.global, background: SyncQueue.background)
+        let sut = TestPresenter<String, SampleViewModel>(models, main: SyncQueue.global, background: SyncQueue.background)
         XCTAssert(sut.getModels().count == models.count)
     }
 }
