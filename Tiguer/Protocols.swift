@@ -50,7 +50,7 @@ public protocol PresenterProtocol {
 
 public protocol FilterProtocol {
     associatedtype ViewModel
-    func filter<ViewModel>(_ viewModels: [ViewModel]) -> [ViewModel]
+    func filter<ViewModel:Comparable>(_ viewModels: [ViewModel]) -> [ViewModel]
 }
 
 public protocol NetworkSession {
