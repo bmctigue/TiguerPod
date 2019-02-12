@@ -39,8 +39,6 @@ class PresenterTests: XCTestCase {
 
     func testUpdateDisplayedMovies() {
         let sut = TestPresenter<String, SampleViewModel>(models, main: SyncQueue.global, background: SyncQueue.background)
-        let filterHandler: FilterHandler = { (viewModels:[SampleViewModel]) in return viewModels }
-        sut.filterHandler = filterHandler
         let response = Response(models)
         sut.updateViewModels(response)
         let dynamicModels = sut.getDynamicModels()

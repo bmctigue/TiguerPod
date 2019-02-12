@@ -10,7 +10,6 @@ import UIKit
 import Promis
 
 public typealias VCBuilderBlock = ((UIViewController) -> Void)
-public typealias FilterHandler<ViewModel> = (([ViewModel]) -> [ViewModel])
 
 public protocol BaseBuilder: class {
     func run()

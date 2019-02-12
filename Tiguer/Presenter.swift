@@ -17,7 +17,6 @@ extension Tiguer {
         
         public var main: Dispatching
         public var background: Dispatching
-        public var filterHandler: FilterHandler<ViewModel>?
         
         public init(_ models: [Model] = [Model](), main: Dispatching = AsyncQueue.main, background: Dispatching = AsyncQueue.background) {
             self.models = models
@@ -33,12 +32,8 @@ extension Tiguer {
         
         open func updatedViewModels(completionHandler: @escaping ([ViewModel]) -> Void) {
             background.dispatch {
-                var resultModels = self.viewModels
-                if let filterHandler = self.filterHandler {
-                    resultModels = filterHandler(resultModels)
-                }
                 self.main.dispatch {
-                    completionHandler(resultModels)
+                    completionHandler(self.viewModels)
                 }
             }
         }
