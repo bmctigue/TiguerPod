@@ -77,6 +77,6 @@ public protocol CacheProtocol {
     func removeObject(_ key: String)
 }
 
-protocol StoryboardFactoryProtocol {
+public protocol StoryboardFactoryProtocol {
     func create(name: String, bundle: Bundle) -> UIStoryboard
 }

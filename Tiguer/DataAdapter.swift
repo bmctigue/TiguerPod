@@ -10,7 +10,10 @@ import Foundation
 import Promis
 
 extension Tiguer {
-    open class DataAdapter<Model>: DataAdapterProtocol {
+    open class DataAdapter: DataAdapterProtocol {
+        
+        // override this to correct subclass type
+        public typealias Model = String
         
         public init() {}
         
