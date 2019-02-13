@@ -10,9 +10,7 @@ import XCTest
 import Tiguer
 import Promis
 
-class TestDataAdapter: Tiguer.DataAdapter {
-    
-    typealias Model = String
+class TestDataAdapter<Model>: Tiguer.DataAdapter<Model> {
     
     override func itemsFromData(_ data: Data) -> Future<DataAdapterResult.Result<Model>> {
         let promise = Promise<DataAdapterResult.Result<Model>>()
@@ -27,7 +25,7 @@ class TestDataAdapter: Tiguer.DataAdapter {
 class DataAdapterTests: XCTestCase {
 
     func testItemsFromData() {
-        let sut = TestDataAdapter()
+        let sut = TestDataAdapter<String>()
         let result = sut.itemsFromData(Data())
         XCTAssert(result.hasResult())
     }
