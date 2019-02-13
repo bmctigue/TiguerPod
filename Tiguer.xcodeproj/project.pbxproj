@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1AA033A0973FF13090038D48 /* Pods_TiguerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F586D5AA0BAD96821EF598D9 /* Pods_TiguerTests.framework */; };
 		2F2ED3A3AEACA187825264FC /* Pods_Tiguer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB96228E4E933BFFD645F3B /* Pods_Tiguer.framework */; };
+		A8031D4B22146F6F006C986B /* DataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8031D4A22146F6F006C986B /* DataAdapter.swift */; };
+		A8031D4F22147572006C986B /* DataAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8031D4E22147572006C986B /* DataAdapterTests.swift */; };
 		A8049E38220DF00600710599 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8049E37220DF00600710599 /* Constants.swift */; };
 		A8049E3A220DF03C00710599 /* RemoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8049E39220DF03C00710599 /* RemoteStore.swift */; };
 		A8049E3C220DF0C900710599 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8049E3B220DF0C900710599 /* Service.swift */; };
@@ -59,6 +61,8 @@
 		5701699E0ABD826E76FE1781 /* Pods-TiguerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiguerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TiguerTests/Pods-TiguerTests.release.xcconfig"; sourceTree = "<group>"; };
 		5DE465025D9635756F587D58 /* Pods-Tiguer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiguer.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tiguer/Pods-Tiguer.release.xcconfig"; sourceTree = "<group>"; };
 		7F47D3CFCBC671CD8CFF7377 /* Pods-Tiguer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiguer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tiguer/Pods-Tiguer.debug.xcconfig"; sourceTree = "<group>"; };
+		A8031D4A22146F6F006C986B /* DataAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAdapter.swift; sourceTree = "<group>"; };
+		A8031D4E22147572006C986B /* DataAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataAdapterTests.swift; sourceTree = "<group>"; };
 		A8049E37220DF00600710599 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A8049E39220DF03C00710599 /* RemoteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteStore.swift; sourceTree = "<group>"; };
 		A8049E3B220DF0C900710599 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
@@ -176,6 +180,7 @@
 				A88149422211B6A60072162F /* testJson.json */,
 				A8693E97221227380018CDEB /* Presenter.swift */,
 				A88149482211B7B10072162F /* Assets.xcassets */,
+				A8031D4A22146F6F006C986B /* DataAdapter.swift */,
 			);
 			path = Tiguer;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 				A881493C2211ADEB0072162F /* StoryboardFactoryTests.swift */,
 				A887B3502200C49E00870406 /* Info.plist */,
 				A887B3742200C6CD00870406 /* TiguerTests-Bridging-Header.h */,
+				A8031D4E22147572006C986B /* DataAdapterTests.swift */,
 			);
 			path = TiguerTests;
 			sourceTree = "<group>";
@@ -396,6 +402,7 @@
 				A8049E38220DF00600710599 /* Constants.swift in Sources */,
 				A857CB482203C78800FB4BD9 /* LoadingViewController.swift in Sources */,
 				A857CB492203C78800FB4BD9 /* UIViewController+AddRemove.swift in Sources */,
+				A8031D4B22146F6F006C986B /* DataAdapter.swift in Sources */,
 				A887B36F2200C5B200870406 /* UITableView+ScrollToTop.swift in Sources */,
 				A8BD812922088AFB005D5BA6 /* Cache.swift in Sources */,
 				A887B36E2200C5B200870406 /* Enumerations.swift in Sources */,
@@ -412,6 +419,7 @@
 				A8BD812B220894DD005D5BA6 /* CacheTests.swift in Sources */,
 				A887B3762200C6CE00870406 /* DynamicValueTests.swift in Sources */,
 				A881494D2211BA9F0072162F /* LocalStoreTests.swift in Sources */,
+				A8031D4F22147572006C986B /* DataAdapterTests.swift in Sources */,
 				A8693E9A221229490018CDEB /* PresenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

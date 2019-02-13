@@ -29,9 +29,9 @@ extension StoreProtocol {
     }
 }
 
-public protocol DataAdapterProtocol {
+public protocol DataAdapterProtocol: class {
     associatedtype Model
-    func itemsFromData(_ data: Data) -> Future<DataAdapter.Result<Model>>
+    func itemsFromData(_ data: Data) -> Future<DataAdapterResult.Result<Model>>
 }
 
 public protocol ServiceProtocol: class {
