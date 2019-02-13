@@ -9,7 +9,7 @@
 import XCTest
 @testable import Tiguer
 
-class TestPresenter<Model, ViewModel: Comparable>: Tiguer.Presenter<Model, ViewModel> {
+class TestPresenter<Model, ViewModel>: Tiguer.Presenter<Model, ViewModel> {
     
     override var baseViewModels: [ViewModel] {
         var resultModels = [ViewModel]()
