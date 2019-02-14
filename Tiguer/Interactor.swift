@@ -11,7 +11,7 @@ import Foundation
 extension Tiguer {
     open class Interactor<Model, Presenter: PresenterProtocol, Service: ServiceProtocol>: InteractorProtocol {
         
-        private var presenter: Presenter
+        public var presenter: Presenter
         public var service: Service
         
         public init(_ presenter: Presenter, service: Service) {
