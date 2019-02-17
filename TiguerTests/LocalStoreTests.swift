@@ -18,9 +18,10 @@ class LocalStoreTests: XCTestCase {
     
     func testLocalStore() {
         let expectation = self.expectation(description: "fetchData")
-        let sut = LocalStore(assetName)
         let testBundle = Bundle(for: type(of: self))
-        sut.fetchData(url!, bundle: testBundle).finally { future in
+        let sut = LocalStore(assetName, bundle: testBundle)
+        
+        sut.fetchData(url!).finally { future in
             switch future.state {
             case .result(let storeResult):
                 switch storeResult {
@@ -43,10 +44,10 @@ class LocalStoreTests: XCTestCase {
 
     func testLocalStoreBadAsset() {
         let expectation = self.expectation(description: "fetchData")
-        let sut = LocalStore("badAssetName")
-        self.fetchedData = nil
         let testBundle = Bundle(for: type(of: self))
-        sut.fetchData(url!, bundle: testBundle).finally { future in
+        let sut = LocalStore("badAssetName", bundle: testBundle)
+        self.fetchedData = nil
+        sut.fetchData(url!).finally { future in
             switch future.state {
             case .result(let storeResult):
                 switch storeResult {

@@ -43,6 +43,8 @@
 		A887B3782200C71200870406 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A887B3772200C71200870406 /* Podfile */; };
 		A8BD812922088AFB005D5BA6 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD812822088AFB005D5BA6 /* Cache.swift */; };
 		A8BD812B220894DD005D5BA6 /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD812A220894DD005D5BA6 /* CacheTests.swift */; };
+		A8BFD1CF221730ED0095881A /* InteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFD1CE221730ED0095881A /* InteractorTests.swift */; };
+		A8BFD1D12217321E0095881A /* TestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFD1D02217321E0095881A /* TestModels.swift */; };
 		A8E901762210942E002152BC /* StoryboardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E901752210942E002152BC /* StoryboardFactory.swift */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +98,8 @@
 		A887B3772200C71200870406 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A8BD812822088AFB005D5BA6 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		A8BD812A220894DD005D5BA6 /* CacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheTests.swift; sourceTree = "<group>"; };
+		A8BFD1CE221730ED0095881A /* InteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorTests.swift; sourceTree = "<group>"; };
+		A8BFD1D02217321E0095881A /* TestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModels.swift; sourceTree = "<group>"; };
 		A8E901752210942E002152BC /* StoryboardFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardFactory.swift; sourceTree = "<group>"; };
 		ADF82A81B3C1F4A820062D8C /* Pods-TiguerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiguerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TiguerTests/Pods-TiguerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F586D5AA0BAD96821EF598D9 /* Pods_TiguerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiguerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +185,7 @@
 				A8693E97221227380018CDEB /* Presenter.swift */,
 				A88149482211B7B10072162F /* Assets.xcassets */,
 				A8031D4A22146F6F006C986B /* DataAdapter.swift */,
+				A8BFD1D02217321E0095881A /* TestModels.swift */,
 			);
 			path = Tiguer;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 				A881494C2211BA9F0072162F /* LocalStoreTests.swift */,
 				A881494E2211BD080072162F /* RemoteStoreTests.swift */,
 				A8693E99221229490018CDEB /* PresenterTests.swift */,
+				A8BFD1CE221730ED0095881A /* InteractorTests.swift */,
 				A887B3752200C6CE00870406 /* DynamicValueTests.swift */,
 				A8BD812A220894DD005D5BA6 /* CacheTests.swift */,
 				A881493C2211ADEB0072162F /* StoryboardFactoryTests.swift */,
@@ -391,6 +397,7 @@
 				A8693E98221227380018CDEB /* Presenter.swift in Sources */,
 				A857CB472203C78800FB4BD9 /* TableViewDataSource.swift in Sources */,
 				A887B3702200C5B200870406 /* DispatchingQueues.swift in Sources */,
+				A8BFD1D12217321E0095881A /* TestModels.swift in Sources */,
 				A8049E3C220DF0C900710599 /* Service.swift in Sources */,
 				A887B3712200C5B200870406 /* Protocols.swift in Sources */,
 				A887B36D2200C5B200870406 /* Structs.swift in Sources */,
@@ -421,6 +428,7 @@
 				A881494D2211BA9F0072162F /* LocalStoreTests.swift in Sources */,
 				A8031D4F22147572006C986B /* DataAdapterTests.swift in Sources */,
 				A8693E9A221229490018CDEB /* PresenterTests.swift in Sources */,
+				A8BFD1CF221730ED0095881A /* InteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

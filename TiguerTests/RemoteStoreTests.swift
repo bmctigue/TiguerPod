@@ -28,8 +28,8 @@ class RemoteStoreTests: XCTestCase {
     
     func testRemoteStoreFetchData() {
         let expectation = self.expectation(description: "fetchData")
-        let testBundle = Bundle(for: type(of: self))
-        sut.fetchData(url, bundle: testBundle).finally { [weak self] future in
+        
+        sut.fetchData(url).finally { [weak self] future in
             switch future.state {
             case .result(let storeResult):
                 switch storeResult {
