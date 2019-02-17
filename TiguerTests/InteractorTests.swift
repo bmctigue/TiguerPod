@@ -18,10 +18,10 @@ class MoviesInteractorTests: XCTestCase {
     func testFetchItemsForAllMovies() {
         let testBundle = Bundle(for: type(of: self))
         let store = LocalStore(assetName, bundle: testBundle)
-        let dataAdapter = TestDataAdapter<Movie>()
-        let service = Tiguer.Service<Movie, Tiguer.DataAdapter>(store, dataAdapter: dataAdapter, cacheKey: cacheKey)
-        let presenter = TestPresenter<Movie, MovieViewModel>([], main: SyncQueue.global, background: SyncQueue.background)
-        let sut = Tiguer.Interactor<Movie, TestPresenter, Tiguer.Service>(presenter, service: service)
+        let dataAdapter = TestDataAdapter<TiguerMovie>()
+        let service = Tiguer.Service<TiguerMovie, Tiguer.DataAdapter>(store, dataAdapter: dataAdapter, cacheKey: cacheKey)
+        let presenter = TestPresenter<TiguerMovie, TiguerMovieViewModel>([], main: SyncQueue.global, background: SyncQueue.background)
+        let sut = Tiguer.Interactor<TiguerMovie, TestPresenter, Tiguer.Service>(presenter, service: service)
         let request = Request()
         let url = URL(string: "https://www.google.com")!
         sut.fetchItems(request, url: url)

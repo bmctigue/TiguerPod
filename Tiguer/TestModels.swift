@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct Movie: Codable {
+struct TiguerMovie: Codable {
     var id: String = "1234"
 }
 
-struct MovieViewModel: Codable {
+struct TiguerMovieViewModel: Codable {
     var id: String = "1234"
 }
