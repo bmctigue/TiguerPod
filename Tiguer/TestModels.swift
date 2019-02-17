@@ -8,10 +8,12 @@
 
 import Foundation
 
-struct TiguerMovie: Codable {
-    var id: String = "1234"
-}
+extension Tiguer {
+    struct Movie: Codable {
+        var id: String = "1234"
+    }
 
-struct TiguerMovieViewModel: Codable {
-    var id: String = "1234"
+    struct MovieViewModel: Codable {
+        var id: String = "1234"
+    }
 }
