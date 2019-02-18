@@ -137,6 +137,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A84D318C221AFEE500FCDCDD /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				A857CB422203C78800FB4BD9 /* LocalStore.swift */,
+				A8049E39220DF03C00710599 /* RemoteStore.swift */,
+				A8049E3B220DF0C900710599 /* Service.swift */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
 		A887B3362200C49E00870406 = {
 			isa = PBXGroup;
 			children = (
@@ -161,18 +171,16 @@
 		A887B3422200C49E00870406 /* Tiguer */ = {
 			isa = PBXGroup;
 			children = (
+				A84D318C221AFEE500FCDCDD /* BusinessLogic */,
 				A8049E37220DF00600710599 /* Constants.swift */,
 				A887B3672200C5B200870406 /* Enumerations.swift */,
 				A887B3662200C5B200870406 /* Structs.swift */,
 				A887B36A2200C5B200870406 /* Protocols.swift */,
-				A857CB422203C78800FB4BD9 /* LocalStore.swift */,
-				A8049E39220DF03C00710599 /* RemoteStore.swift */,
 				A8049E3D220DF99800710599 /* Interactor.swift */,
-				A8049E3B220DF0C900710599 /* Service.swift */,
 				A8693E97221227380018CDEB /* Presenter.swift */,
+				A8031D4A22146F6F006C986B /* DataAdapter.swift */,
 				A857CB442203C78800FB4BD9 /* LoadingViewController.swift */,
 				A887B3722200C5BD00870406 /* DynamicValue.swift */,
-				A8031D4A22146F6F006C986B /* DataAdapter.swift */,
 				A857CB432203C78800FB4BD9 /* TableViewDataSource.swift */,
 				A857CB452203C78800FB4BD9 /* UIViewController+AddRemove.swift */,
 				A887B3692200C5B200870406 /* DispatchingQueues.swift */,
