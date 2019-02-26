@@ -9,7 +9,7 @@
 import Foundation
 
 extension Tiguer {
-    public class SelectionManager<Model> {
+    open class SelectionManager<Model> {
         
         let selectionKey = "\(Model.self)"
         
@@ -20,7 +20,7 @@ extension Tiguer {
             self.selections = cache.getObject(selectionKey) ?? []
         }
         
-        public func updateSelections(_ state: SelectionState) {
+        open func updateSelections(_ state: SelectionState) {
             switch state {
             case .selected(let selectionId):
                 selections.insert(selectionId)
@@ -30,7 +30,7 @@ extension Tiguer {
             cache.setObject(selections, key: selectionKey)
         }
         
-        public func getSelections() -> Set<String> {
+        open func getSelections() -> Set<String> {
             return selections
         }
     }
