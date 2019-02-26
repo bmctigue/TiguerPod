@@ -41,6 +41,7 @@
 		A887B3732200C5BD00870406 /* DynamicValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887B3722200C5BD00870406 /* DynamicValue.swift */; };
 		A887B3762200C6CE00870406 /* DynamicValueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A887B3752200C6CE00870406 /* DynamicValueTests.swift */; };
 		A887B3782200C71200870406 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = A887B3772200C71200870406 /* Podfile */; };
+		A88969A6222584060090780C /* SelectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88969A5222584060090780C /* SelectionManager.swift */; };
 		A8BD812922088AFB005D5BA6 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD812822088AFB005D5BA6 /* Cache.swift */; };
 		A8BD812B220894DD005D5BA6 /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD812A220894DD005D5BA6 /* CacheTests.swift */; };
 		A8BFD1CF221730ED0095881A /* InteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFD1CE221730ED0095881A /* InteractorTests.swift */; };
@@ -96,6 +97,7 @@
 		A887B3742200C6CD00870406 /* TiguerTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TiguerTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		A887B3752200C6CE00870406 /* DynamicValueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamicValueTests.swift; sourceTree = "<group>"; };
 		A887B3772200C71200870406 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A88969A5222584060090780C /* SelectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionManager.swift; sourceTree = "<group>"; };
 		A8BD812822088AFB005D5BA6 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		A8BD812A220894DD005D5BA6 /* CacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheTests.swift; sourceTree = "<group>"; };
 		A8BFD1CE221730ED0095881A /* InteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorTests.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				A8693E97221227380018CDEB /* Presenter.swift */,
 				A8031D4A22146F6F006C986B /* DataAdapter.swift */,
 				A857CB442203C78800FB4BD9 /* LoadingViewController.swift */,
+				A88969A5222584060090780C /* SelectionManager.swift */,
 				A887B3722200C5BD00870406 /* DynamicValue.swift */,
 				A857CB432203C78800FB4BD9 /* TableViewDataSource.swift */,
 				A857CB452203C78800FB4BD9 /* UIViewController+AddRemove.swift */,
@@ -403,6 +406,7 @@
 				A887B36D2200C5B200870406 /* Structs.swift in Sources */,
 				A857CB462203C78800FB4BD9 /* LocalStore.swift in Sources */,
 				A8049E3E220DF99800710599 /* Interactor.swift in Sources */,
+				A88969A6222584060090780C /* SelectionManager.swift in Sources */,
 				A887B3732200C5BD00870406 /* DynamicValue.swift in Sources */,
 				A8E901762210942E002152BC /* StoryboardFactory.swift in Sources */,
 				A887B36B2200C5B200870406 /* URLProtocolStub.swift in Sources */,
