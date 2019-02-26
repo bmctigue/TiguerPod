@@ -74,7 +74,3 @@ public protocol CacheProtocol {
 public protocol StoryboardFactoryProtocol {
     func create(name: String, bundle: Bundle) -> UIStoryboard
 }
-
-public protocol SelectionProtocol {
-    var selectionId: String { get }
-}

@@ -9,7 +9,7 @@
 import Foundation
 
 extension Tiguer {
-    public class SelectionManager<Model: SelectionProtocol> {
+    public class SelectionManager<Model> {
         
         let selectionKey = "\(Model.self)"
         
