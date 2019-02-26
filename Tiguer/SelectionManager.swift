@@ -8,29 +8,30 @@
 
 import Foundation
 
-public class SelectionManager<Model: SelectionProtocol> {
-    
-    let selectionKey = "\(Model.self)"
-    
-    private var selections: Set<String> = []
-    private lazy var cache = BaseCache<Set<String>>()
-    
-    public init() {
-        self.selections = cache.getObject(selectionKey) ?? []
-    }
-    
-    public func updateSelections(_ state: SelectionState) {
-        switch state {
-        case .selected(let selectionId):
-            selections.insert(selectionId)
-        case .unSelected(let selectionId):
-            selections.remove(selectionId)
+extension Tiguer {
+    public class SelectionManager<Model: SelectionProtocol> {
+        
+        let selectionKey = "\(Model.self)"
+        
+        private var selections: Set<String> = []
+        private lazy var cache = BaseCache<Set<String>>()
+        
+        public init() {
+            self.selections = cache.getObject(selectionKey) ?? []
         }
-        cache.setObject(selections, key: selectionKey)
+        
+        public func updateSelections(_ state: SelectionState) {
+            switch state {
+            case .selected(let selectionId):
+                selections.insert(selectionId)
+            case .unSelected(let selectionId):
+                selections.remove(selectionId)
+            }
+            cache.setObject(selections, key: selectionKey)
+        }
+        
+        public func getSelections() -> Set<String> {
+            return selections
+        }
     }
-    
-    public func getSelections() -> Set<String> {
-        return selections
-    }
-    
 }
