@@ -76,5 +76,5 @@ public protocol StoryboardFactoryProtocol {
 }
 
 public protocol SelectionProtocol {
-    var selectionId: String { get set }
+    var selectionId: String { get }
 }
