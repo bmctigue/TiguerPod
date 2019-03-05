@@ -8,17 +8,19 @@
 
 import Foundation
 
-class LocalDataUrlGenerator: URLGenerator {
-    
-    private lazy var components: URLComponents = URLComponents()
-    
-    init(_ request: Request) {
-        self.components.host = "www.google.com"
-        self.components.path = ""
-        self.components.scheme = "https"
-    }
-    
-    func url() -> URL? {
-        return components.url
+extension Tiguer {
+    open class LocalDataUrlGenerator: URLGenerator {
+        
+        private lazy var components: URLComponents = URLComponents()
+        
+        public init(_ request: Request) {
+            self.components.host = "www.google.com"
+            self.components.path = ""
+            self.components.scheme = "https"
+        }
+        
+        open func url() -> URL? {
+            return components.url
+        }
     }
 }
