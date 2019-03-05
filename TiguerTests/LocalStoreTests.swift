@@ -12,7 +12,7 @@ import XCTest
 class LocalStoreTests: XCTestCase {
     
     let assetName = "testJson"
-    let url = URL(string: "https://www.google.com")
+    lazy var url = LocalDataUrlGenerator(Request()).url()
     var fetchedData: Data?
     var error: StoreError?
     

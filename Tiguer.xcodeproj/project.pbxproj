@@ -47,6 +47,7 @@
 		A8BD812B220894DD005D5BA6 /* CacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD812A220894DD005D5BA6 /* CacheTests.swift */; };
 		A8BFD1CF221730ED0095881A /* InteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFD1CE221730ED0095881A /* InteractorTests.swift */; };
 		A8BFD1D12217321E0095881A /* TestModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BFD1D02217321E0095881A /* TestModels.swift */; };
+		A8DFC7BC222ED52700F6B6EF /* LocalDataUrlGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DFC7BB222ED52700F6B6EF /* LocalDataUrlGenerator.swift */; };
 		A8E901762210942E002152BC /* StoryboardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E901752210942E002152BC /* StoryboardFactory.swift */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +105,7 @@
 		A8BD812A220894DD005D5BA6 /* CacheTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheTests.swift; sourceTree = "<group>"; };
 		A8BFD1CE221730ED0095881A /* InteractorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorTests.swift; sourceTree = "<group>"; };
 		A8BFD1D02217321E0095881A /* TestModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestModels.swift; sourceTree = "<group>"; };
+		A8DFC7BB222ED52700F6B6EF /* LocalDataUrlGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataUrlGenerator.swift; sourceTree = "<group>"; };
 		A8E901752210942E002152BC /* StoryboardFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardFactory.swift; sourceTree = "<group>"; };
 		ADF82A81B3C1F4A820062D8C /* Pods-TiguerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TiguerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TiguerTests/Pods-TiguerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F586D5AA0BAD96821EF598D9 /* Pods_TiguerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiguerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -182,6 +184,7 @@
 				A857CB452203C78800FB4BD9 /* UIViewController+AddRemove.swift */,
 				A887B3692200C5B200870406 /* DispatchingQueues.swift */,
 				A887B3682200C5B200870406 /* UITableView+ScrollToTop.swift */,
+				A8DFC7BB222ED52700F6B6EF /* LocalDataUrlGenerator.swift */,
 				A887B3642200C5B200870406 /* URLProtocolStub.swift */,
 				A8BD812822088AFB005D5BA6 /* Cache.swift */,
 				A8E901752210942E002152BC /* StoryboardFactory.swift */,
@@ -409,6 +412,7 @@
 				A887B36D2200C5B200870406 /* Structs.swift in Sources */,
 				A857CB462203C78800FB4BD9 /* LocalStore.swift in Sources */,
 				A8049E3E220DF99800710599 /* Interactor.swift in Sources */,
+				A8DFC7BC222ED52700F6B6EF /* LocalDataUrlGenerator.swift in Sources */,
 				A88969A6222584060090780C /* SelectionManager.swift in Sources */,
 				A887B3732200C5BD00870406 /* DynamicValue.swift in Sources */,
 				A8E901762210942E002152BC /* StoryboardFactory.swift in Sources */,
