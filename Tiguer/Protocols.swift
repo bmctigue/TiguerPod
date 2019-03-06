@@ -20,7 +20,7 @@ public protocol VCBuilder: class {
 }
 
 public protocol StoreProtocol {
-    func fetchData(_ url: URL) -> Future<Store.Result>
+    func fetchData(_ url: URL?) -> Future<Store.Result>
 }
 
 public protocol DataAdapterProtocol: class {

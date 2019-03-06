@@ -50,4 +50,28 @@ class RemoteStoreTests: XCTestCase {
         XCTAssertNotNil(self.resultFuture)
         XCTAssertNil(error)
     }
+    
+    func testRemoteStoreInvalidUrl() {
+        let expectation = self.expectation(description: "invalidUrl")
+        sut.fetchData(nil).finally { [weak self] future in
+            switch future.state {
+            case .result(let storeResult):
+                switch storeResult {
+                case .success(_):
+                    self?.resultFuture = future
+                }
+            case .error(let error):
+                self?.error = error as? StoreError
+            case .cancelled:
+                XCTFail()
+            case .unresolved:
+                XCTFail()
+            }
+            expectation.fulfill()
+        }
+        waitForExpectations(timeout: 3.0, handler: nil)
+        XCTAssertNil(self.resultFuture)
+        XCTAssertNotNil(error)
+        XCTAssert(error == StoreError.invalidUrl)
+    }
 }

@@ -12,7 +12,6 @@ import XCTest
 class LocalStoreTests: XCTestCase {
     
     let assetName = "testJson"
-    lazy var url = LocalDataUrlGenerator(Request()).url()
     var fetchedData: Data?
     var error: StoreError?
     
@@ -21,7 +20,7 @@ class LocalStoreTests: XCTestCase {
         let testBundle = Bundle(for: type(of: self))
         let sut = LocalStore(assetName, bundle: testBundle)
         
-        sut.fetchData(url!).finally { future in
+        sut.fetchData().finally { future in
             switch future.state {
             case .result(let storeResult):
                 switch storeResult {
@@ -47,7 +46,7 @@ class LocalStoreTests: XCTestCase {
         let testBundle = Bundle(for: type(of: self))
         let sut = LocalStore("badAssetName", bundle: testBundle)
         self.fetchedData = nil
-        sut.fetchData(url!).finally { future in
+        sut.fetchData().finally { future in
             switch future.state {
             case .result(let storeResult):
                 switch storeResult {
