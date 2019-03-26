@@ -30,7 +30,7 @@ public final class BaseCache<CacheObject: Codable>: CacheProtocol {
     }
     
     public func getObject<CacheObject>(_ key: String) -> CacheObject? {
-        let object = ((try? storage?.object(forKey: key)) as CacheObject??)
+        let object = (try? storage?.object(forKey: key))
         return object as? CacheObject
     }
     
