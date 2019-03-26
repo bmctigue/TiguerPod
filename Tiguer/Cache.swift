@@ -26,16 +26,16 @@ public final class BaseCache<CacheObject: Codable>: CacheProtocol {
         guard testingState == .notTesting else {
             return
         }
-        try? storage?.setObject(object as! BaseCache.CacheObject, forKey: key)
+        ((try? storage?.setObject(object as! BaseCache.CacheObject, forKey: key)) as ()??)
     }
     
     public func getObject<CacheObject>(_ key: String) -> CacheObject? {
-        let object = try? storage?.object(forKey: key)
+        let object = ((try? storage?.object(forKey: key)) as CacheObject??)
         return object as? CacheObject
     }
     
     public func removeObject(_ key: String) {
-        try? storage?.removeObject(forKey: key)
+        ((try? storage?.removeObject(forKey: key)) as ()??)
     }
     
     public func updateTestingState(_ testingState: TestingState) {

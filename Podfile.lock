@@ -1,6 +1,6 @@
 PODS:
   - Cache (5.2.0)
-  - Promis (2.0.0)
+  - Promis (2.0.1)
 
 DEPENDENCIES:
   - Cache
@@ -13,8 +13,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Cache: 807c5d86d01a177f06ede9865add3aea269bbfd4
-  Promis: 92878a15a9d146622b1815e137638e2c0be974ff
+  Promis: ba663b5d73bb22948ec6143928fdf0e896364976
 
 PODFILE CHECKSUM: 82d600653ade1949ec03e6efbdaa704a3e2fbd56
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.6.0
