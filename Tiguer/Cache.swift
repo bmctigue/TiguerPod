@@ -26,7 +26,7 @@ public final class BaseCache<CacheObject: Codable>: CacheProtocol {
         guard testingState == .notTesting else {
             return
         }
-        ((try? storage?.setObject(object as! BaseCache.CacheObject, forKey: key)) as ()??)
+        try? storage?.setObject(object as! BaseCache.CacheObject, forKey: key)
     }
     
     public func getObject<CacheObject>(_ key: String) -> CacheObject? {
