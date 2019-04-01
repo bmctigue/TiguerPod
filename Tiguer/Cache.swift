@@ -39,8 +39,4 @@ extension Tiguer {
             self.testingState = testingState
         }
     }
-
-    open class ServiceCache: BaseCache {
-        typealias CacheObject = [Int]
-    }
 }
