@@ -367,14 +367,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TiguerTests/Pods-TiguerTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Promis/Promis.framework",
-				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promis.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import Unbox
 
 open class BaseCache: CacheProtocol {
     public typealias CacheObject = Int
