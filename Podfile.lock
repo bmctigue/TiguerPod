@@ -1,16 +1,20 @@
 PODS:
   - Promis (2.0.1)
+  - Unbox (3.0.0)
 
 DEPENDENCIES:
   - Promis
+  - Unbox
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Promis
+    - Unbox
 
 SPEC CHECKSUMS:
   Promis: ba663b5d73bb22948ec6143928fdf0e896364976
+  Unbox: 9ed33b2a31f7a8a049f54b94d40c4a52a28c4d9d
 
-PODFILE CHECKSUM: 875f28e9cace5c217ed498aeeec590e52afb960c
+PODFILE CHECKSUM: 71870a9a9ec470c84b6e79ef25f75f38637ddc8d
 
 COCOAPODS: 1.6.0

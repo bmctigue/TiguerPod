@@ -7,22 +7,23 @@
 //
 
 import Foundation
+import Unbox
 
 open class BaseCache: CacheProtocol {
     public typealias CacheObject = Int
     
     private var testingState: TestingState = .notTesting
-    private lazy var storage = NSCache<NSString, AnyObject>()
+    private var storage: NSCache<NSString, AnyObject>
     
     public init() {
-        assert(false, "BaseCache CacheObject is not defined")
+        self.storage = NSCache<NSString, AnyObject>()
     }
     
     public func setObject<CacheObject>(_ object: CacheObject, key: NSString) {
         guard testingState == .notTesting else {
             return
         }
-        storage.setObject(CacheObject.self as AnyObject, forKey: key)
+        storage.setObject(object as AnyObject, forKey: key)
     }
     
     public func getObject<CacheObject>(_ key: NSString) -> CacheObject? {

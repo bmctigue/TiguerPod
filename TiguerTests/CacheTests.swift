@@ -11,6 +11,8 @@ import XCTest
 
 class CacheTests: XCTestCase {
     
+    typealias CacheObject = Set<Int>
+    
     let testKey = NSString("test")
     let testInt = 5
     let set: Set<Int> = [5]
@@ -18,7 +20,7 @@ class CacheTests: XCTestCase {
     func testAddObjectToCache() {
         let cache = TestCache()
         cache.setObject(set, key: testKey)
-        let cachedSet: Set<Int>? = cache.getObject(testKey)
+        let cachedSet: CacheObject? = cache.getObject(testKey)
         XCTAssertNotNil(cachedSet)
         XCTAssert(cachedSet!.contains(testInt))
     }
@@ -28,7 +30,7 @@ class CacheTests: XCTestCase {
         cache.updateTestingState(TestingState.testing)
         cache.removeObject(testKey)
         cache.setObject(set, key: testKey)
-        let cachedSet: Set<Int>? = cache.getObject(testKey)
+        let cachedSet: CacheObject? = cache.getObject(testKey)
         XCTAssertNil(cachedSet)
     }
     
@@ -36,12 +38,11 @@ class CacheTests: XCTestCase {
         let cache = TestCache()
         cache.setObject(set, key: testKey)
         cache.removeObject(testKey)
-        let cachedSet: Set<Int>? = cache.getObject(testKey)
+        let cachedSet: CacheObject? = cache.getObject(testKey)
         XCTAssertNil(cachedSet)
     }
 }
 
 class TestCache: BaseCache {
     typealias CacheObject = Set<Int>
-    public override init() {}
 }

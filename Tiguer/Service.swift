@@ -64,9 +64,6 @@ extension Tiguer {
         
         private class ServiceCache: BaseCache {
             typealias CacheObject = Set<String>
-            public override init() {
-                assert(false, "ServiceCache Model is not defined")
-            }
         }
     }
 }

@@ -37,6 +37,5 @@ extension Tiguer {
     
     private class SelectionCache: BaseCache {
         typealias CacheObject = Set<String>
-        public override init() {}
     }
 }
