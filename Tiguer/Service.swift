@@ -61,9 +61,9 @@ extension Tiguer {
         public func updateCacheTestingState(_ testingState: TestingState) {
             self.cache.updateTestingState(testingState)
         }
-    }
-    
-    open class ServiceCache: BaseCache {
-        typealias CacheObject = [Int]
+        
+        open class ServiceCache: BaseCache {
+            typealias CacheObject = [Model]
+        }
     }
 }
