@@ -1,28 +1,16 @@
 PODS:
-  - Cache (5.2.0)
   - Promis (2.0.1)
 
 DEPENDENCIES:
-  - Cache (from `https://github.com/SpireTeam/Cache.git`)
   - Promis
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Promis
 
-EXTERNAL SOURCES:
-  Cache:
-    :git: https://github.com/SpireTeam/Cache.git
-
-CHECKOUT OPTIONS:
-  Cache:
-    :commit: d91d78e14c0a87675e1c163c1eec74d129f4b5e2
-    :git: https://github.com/SpireTeam/Cache.git
-
 SPEC CHECKSUMS:
-  Cache: 807c5d86d01a177f06ede9865add3aea269bbfd4
   Promis: ba663b5d73bb22948ec6143928fdf0e896364976
 
-PODFILE CHECKSUM: 199ee0718861b42b1d4d35d0c4fe320471bafda9
+PODFILE CHECKSUM: 875f28e9cace5c217ed498aeeec590e52afb960c
 
 COCOAPODS: 1.6.0
