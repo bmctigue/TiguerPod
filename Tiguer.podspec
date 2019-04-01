@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "Tiguer"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "Common source files."
   s.description  = "Common source files. Sourced from John Sundell mostly."
   s.license      = 'MIT'
