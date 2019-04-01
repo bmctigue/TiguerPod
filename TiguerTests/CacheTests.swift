@@ -43,6 +43,6 @@ class CacheTests: XCTestCase {
     }
 }
 
-class TestCache: BaseCache {
+class TestCache: Tiguer.BaseCache {
     typealias CacheObject = Set<Int>
 }
