@@ -12,21 +12,29 @@ extension Tiguer {
     open class BaseCache<CacheObject: Codable>: CacheProtocol {
         
         private var testingState: TestingState = .notTesting
+        private let queue = DispatchQueue(label: "com.tiguer.cache")
         
         public func setObject<CacheObject: Codable>(_ object: CacheObject, forKey key: String) {
             guard testingState == .notTesting else {
                 return
             }
-            UserDefaults.standard.save(customObject: (object as CacheObject), inKey: key)
+            queue.async {
+                UserDefaults.standard.save(customObject: (object as CacheObject), inKey: key)
+            }
         }
         
         public func getObjectForKey<CacheObject>(_ key: String, completionHandler: @escaping (CacheObject?) -> ()) where CacheObject : Decodable, CacheObject : Encodable {
-            let object = UserDefaults.standard.retrieve(object: CacheObject.self, fromKey: key)
-            completionHandler(object)
+            queue.sync {
+                let object = UserDefaults.standard.retrieve(object: CacheObject.self, fromKey: key)
+                completionHandler(object)
+            }
+            
         }
         
         public func removeObjectForKey(_ key: String) {
-            UserDefaults.standard.delete(forKey: key)
+            queue.async {
+                UserDefaults.standard.delete(forKey: key)
+            }
         }
         
         public func updateTestingState(_ testingState: TestingState) {
