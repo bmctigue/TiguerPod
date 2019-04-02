@@ -366,12 +366,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TiguerTests/Pods-TiguerTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/NKCache/NKCache.framework",
 				"${BUILT_PRODUCTS_DIR}/Promis/Promis.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NKCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promis.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,36 +13,35 @@ class CacheTests: XCTestCase {
     
     typealias CacheObject = Set<Int>
     
-    let testKey = NSString("test")
+    let testKey = "test"
     let testInt = 5
     let set: Set<Int> = [5]
     
     func testAddObjectToCache() {
-        let cache = TestCache()
-        cache.setObject(set, key: testKey)
-        let cachedSet: CacheObject? = cache.getObject(testKey)
-        XCTAssertNotNil(cachedSet)
-        XCTAssert(cachedSet!.contains(testInt))
+        let cache = Tiguer.BaseCache<CacheObject>()
+        cache.setObject(set, forKey: testKey)
+        cache.getObjectForKey(testKey) { [weak self] (object: CacheObject?) in
+            XCTAssertNotNil(object)
+            XCTAssert(object!.contains(self!.testInt))
+        }
     }
     
     func testAddObjectToCacheTesting() {
-        let cache = TestCache()
+        let cache = Tiguer.BaseCache<CacheObject>()
         cache.updateTestingState(TestingState.testing)
-        cache.removeObject(testKey)
-        cache.setObject(set, key: testKey)
-        let cachedSet: CacheObject? = cache.getObject(testKey)
-        XCTAssertNil(cachedSet)
+        cache.removeObjectForKey(testKey)
+        cache.setObject(set, forKey: testKey)
+        cache.getObjectForKey(testKey) { (object: CacheObject?) in
+            XCTAssertNil(object)
+        }
     }
     
     func testRemoveObjectFromCache() {
-        let cache = TestCache()
-        cache.setObject(set, key: testKey)
-        cache.removeObject(testKey)
-        let cachedSet: CacheObject? = cache.getObject(testKey)
-        XCTAssertNil(cachedSet)
+        let cache = Tiguer.BaseCache<CacheObject>()
+        cache.setObject(set, forKey: testKey)
+        cache.removeObjectForKey(testKey)
+        cache.getObjectForKey(testKey) { (object: CacheObject?) in
+            XCTAssertNil(object)
+        }
     }
-}
-
-class TestCache: Tiguer.BaseCache {
-    typealias CacheObject = Set<Int>
 }

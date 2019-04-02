@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "75D8679DB958D718D4E18E8A4818E1CE"
-               BuildableName = "Promis.framework"
-               BlueprintName = "Promis"
+               BlueprintIdentifier = "05D6BA9EE401EAACEF826D795A438287"
+               BuildableName = "NKCache.framework"
+               BlueprintName = "NKCache"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "75D8679DB958D718D4E18E8A4818E1CE"
-            BuildableName = "Promis.framework"
-            BlueprintName = "Promis"
+            BlueprintIdentifier = "05D6BA9EE401EAACEF826D795A438287"
+            BuildableName = "NKCache.framework"
+            BlueprintName = "NKCache"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
