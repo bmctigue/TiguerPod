@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "Tiguer"
-  s.version      = "0.0.10"
+  s.version      = "0.0.11"
   s.summary      = "Common source files."
   s.description  = "Common source files. Sourced from John Sundell mostly."
   s.license      = 'MIT'
@@ -21,4 +21,5 @@ Pod::Spec.new do |s|
   s.homepage     = "http://tiguer.com"
   s.static_framework = true
   s.dependency "Promis"
+  s.dependency "NKCache"
 end
