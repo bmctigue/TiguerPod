@@ -7,33 +7,26 @@
 //
 
 import Foundation
-import NKCache
 
 extension Tiguer {
     open class BaseCache<CacheObject: Codable>: CacheProtocol {
         
         private var testingState: TestingState = .notTesting
-        private var storage: NKCacheManager
-        
-        public init() {
-            self.storage = NKCacheManager.sharedInstance
-        }
         
         public func setObject<CacheObject: Codable>(_ object: CacheObject, forKey key: String) {
             guard testingState == .notTesting else {
                 return
             }
-            storage.setObject((object as CacheObject), forKey: key)
+            UserDefaults.standard.save(customObject: (object as CacheObject), inKey: key)
         }
         
         public func getObjectForKey<CacheObject>(_ key: String, completionHandler: @escaping (CacheObject?) -> ()) where CacheObject : Decodable, CacheObject : Encodable {
-            storage.getObjectForKey(key) { (object: CacheObject?) in
-                completionHandler(object)
-            }
+            let object = UserDefaults.standard.retrieve(object: CacheObject.self, fromKey: key)
+            completionHandler(object)
         }
         
         public func removeObjectForKey(_ key: String) {
-            storage.removeObjectForKey(key)
+            UserDefaults.standard.delete(forKey: key)
         }
         
         public func updateTestingState(_ testingState: TestingState) {

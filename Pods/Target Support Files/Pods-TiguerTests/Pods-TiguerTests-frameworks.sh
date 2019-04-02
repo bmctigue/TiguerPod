@@ -153,11 +153,9 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/NKCache/NKCache.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Promis/Promis.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/NKCache/NKCache.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/Promis/Promis.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then

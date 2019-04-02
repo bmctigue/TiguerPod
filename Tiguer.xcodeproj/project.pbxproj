@@ -21,6 +21,7 @@
 		A857CB492203C78800FB4BD9 /* UIViewController+AddRemove.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB452203C78800FB4BD9 /* UIViewController+AddRemove.swift */; };
 		A8693E98221227380018CDEB /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8693E97221227380018CDEB /* Presenter.swift */; };
 		A8693E9A221229490018CDEB /* PresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8693E99221229490018CDEB /* PresenterTests.swift */; };
+		A86B7E822253B60900D45DD2 /* UserDefaults+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86B7E812253B60900D45DD2 /* UserDefaults+Storage.swift */; };
 		A881493D2211ADEB0072162F /* StoryboardFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A881493C2211ADEB0072162F /* StoryboardFactoryTests.swift */; };
 		A881493F2211AE6A0072162F /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A881493E2211AE6A0072162F /* Test.storyboard */; };
 		A88149412211B36D0072162F /* Test.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A881493E2211AE6A0072162F /* Test.storyboard */; };
@@ -77,6 +78,7 @@
 		A857CB452203C78800FB4BD9 /* UIViewController+AddRemove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddRemove.swift"; sourceTree = "<group>"; };
 		A8693E97221227380018CDEB /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		A8693E99221229490018CDEB /* PresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterTests.swift; sourceTree = "<group>"; };
+		A86B7E812253B60900D45DD2 /* UserDefaults+Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Storage.swift"; sourceTree = "<group>"; };
 		A881493C2211ADEB0072162F /* StoryboardFactoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardFactoryTests.swift; sourceTree = "<group>"; };
 		A881493E2211AE6A0072162F /* Test.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Test.storyboard; sourceTree = "<group>"; };
 		A88149422211B6A60072162F /* testJson.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testJson.json; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				A887B3682200C5B200870406 /* UITableView+ScrollToTop.swift */,
 				A887B3642200C5B200870406 /* URLProtocolStub.swift */,
 				A8BD812822088AFB005D5BA6 /* Cache.swift */,
+				A86B7E812253B60900D45DD2 /* UserDefaults+Storage.swift */,
 				A8E901752210942E002152BC /* StoryboardFactory.swift */,
 				A8BFD1D02217321E0095881A /* TestModels.swift */,
 				A881493E2211AE6A0072162F /* Test.storyboard */,
@@ -366,14 +369,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TiguerTests/Pods-TiguerTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/NKCache/NKCache.framework",
 				"${BUILT_PRODUCTS_DIR}/Promis/Promis.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NKCache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promis.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +419,7 @@
 				A88969A6222584060090780C /* SelectionManager.swift in Sources */,
 				A887B3732200C5BD00870406 /* DynamicValue.swift in Sources */,
 				A8E901762210942E002152BC /* StoryboardFactory.swift in Sources */,
+				A86B7E822253B60900D45DD2 /* UserDefaults+Storage.swift in Sources */,
 				A887B36B2200C5B200870406 /* URLProtocolStub.swift in Sources */,
 				A8049E38220DF00600710599 /* Constants.swift in Sources */,
 				A857CB482203C78800FB4BD9 /* LoadingViewController.swift in Sources */,

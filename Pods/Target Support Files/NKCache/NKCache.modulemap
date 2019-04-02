@@ -1,6 +1,0 @@
-framework module NKCache {
-  umbrella header "NKCache-umbrella.h"
-
-  export *
-  module * { export * }
-}

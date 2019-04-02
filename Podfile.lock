@@ -1,20 +1,16 @@
 PODS:
-  - NKCache (1.0.0)
   - Promis (2.0.1)
 
 DEPENDENCIES:
-  - NKCache
   - Promis
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - NKCache
     - Promis
 
 SPEC CHECKSUMS:
-  NKCache: b7f5b1e0699ec9997e5df3188fb00a95057bc539
   Promis: ba663b5d73bb22948ec6143928fdf0e896364976
 
-PODFILE CHECKSUM: 80f37236d6e6e65d7dd2f59d899aed4ef753cf99
+PODFILE CHECKSUM: 6faa45adbec70adb0cb4964314212b79afb63fd8
 
 COCOAPODS: 1.6.0
