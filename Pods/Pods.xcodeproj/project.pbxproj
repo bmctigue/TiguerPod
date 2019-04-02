@@ -3,31 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0557DEAA2D81B9D64B66B0E03A394193 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B7C8CF836F0F3ADE31570F4065AA14 /* Future.swift */; };
-		3232A2E55916AAA1D12C5DFF4B56CBD4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		39DEB3ED7D4BBD1B32F16FF8D134B408 /* NKCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 83FAAA67E0A8F130FDAC9B9431B966E9 /* NKCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0557DEAA2D81B9D64B66B0E03A394193 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28826BD99FED2DD8AADC1DC27727B15 /* Future.swift */; };
+		221AA360D73F471483FF429EEB716732 /* NKCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F56FC8C0124A9D8EFE6AF1B3ECB0B7 /* NKCacheManager.swift */; };
+		3B264F56D62D619481176F5F3EB7DEAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
 		547CA7BF2163D12B2929BF869CAA8C16 /* Pods-TiguerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D3E24AB84A30C2959E55888FEAC9FD /* Pods-TiguerTests-dummy.m */; };
-		6679984A5CACD929CE074769465EC3AB /* NKCache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F0F0D680A74E6BF24293CD460FD12344 /* NKCache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		69086F3C7383C177C7A6762101FC7080 /* PromisError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826AD7D241240EB24C0A181F57F5B586 /* PromisError.swift */; };
+		69086F3C7383C177C7A6762101FC7080 /* PromisError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629846AF01C9F651FBC202760652B3ED /* PromisError.swift */; };
 		73ADE32CA6C357DE5D1850BFF6426907 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */; };
-		73CC35B92FAFF97BFEEA7514F4980174 /* Promis-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B5901898D9F8E1C7D44FEB8F68E07264 /* Promis-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		74D9269DCE5F206CD5FA7EBE940123A8 /* NKCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3752334210E23B4E9E579CE833157E09 /* NKCache-dummy.m */; };
+		73CC35B92FAFF97BFEEA7514F4980174 /* Promis-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FBE415B987490767CE91E7FCCCB152A5 /* Promis-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9B5AC56DFB00E4616F79D85CE9D97E3A /* Pods-Tiguer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B28D4A0BF3885FD5F207F108550B6CF /* Pods-Tiguer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A643F1EE1C5AD61625036E8BB411FF4F /* NKCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB6101C25B578324876E6F235EFA1AA /* NKCacheManager.swift */; };
 		A822952AF73E328BD598ADDA5662C9CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		B0D458175C005DE8657A7EDD11394406 /* Future+Chaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CF3A3A017955023EA8135DC2D1BE8E /* Future+Chaining.swift */; };
-		B687AF15025AD615E802237368B62337 /* Promis-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F830C878DBD999ADD7512C32B422CDC8 /* Promis-dummy.m */; };
-		B81239669C92A57665C7FF70DE712EAC /* Future+WhenAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8606D1C5DCAC57F692691C4E5A7FE7B /* Future+WhenAll.swift */; };
+		B0D458175C005DE8657A7EDD11394406 /* Future+Chaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E04408BA78E26909CD4B14F6EF5598 /* Future+Chaining.swift */; };
+		B687AF15025AD615E802237368B62337 /* Promis-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E05C77E93F16F686A66D48E75150CC21 /* Promis-dummy.m */; };
+		B81239669C92A57665C7FF70DE712EAC /* Future+WhenAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086BF41943176C2C137EC4F371DF7390 /* Future+WhenAll.swift */; };
 		C2E8B0B8EA82C232A867A807D79C9541 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
-		CF571F5B6F4885C77E797817B5D9D456 /* FutureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C68CD0B06D7951AA22A26702E69B714 /* FutureState.swift */; };
-		CFF99ADDBDEE3735C86032EB06C220C1 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B9B6916F282ECD17060A179E16F337 /* Promise.swift */; };
+		CF571F5B6F4885C77E797817B5D9D456 /* FutureState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536952336E1674480A661E4640D6AB91 /* FutureState.swift */; };
+		CFF99ADDBDEE3735C86032EB06C220C1 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080629509A8C54E988B3E5E57B8D5B95 /* Promise.swift */; };
 		D701770862CF87EE036498C734E71A68 /* Pods-TiguerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25588DA610ED29FD8ACAD03A6032FD7D /* Pods-TiguerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F348EE3A6CBA767E91122AA1E369533E /* NKCache-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A7E7420F7E7BBDB7BD455807EBB6400B /* NKCache-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3E64BD7688EF526ACCBDF572BA29404 /* Pods-Tiguer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BA94C4A596EAABDFCA6AC6BF02A8727 /* Pods-Tiguer-dummy.m */; };
 		F9F41EF15ECD924E19D3CEC3D1B50D41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */; };
+		FD026A07D71B87D66FADBEF635B33CCD /* NKCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E321B16CBB5870120363F9BCB6F25E /* NKCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDCFC70C30A1B4B44F262590A04D28CD /* NKCache-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D24C6A7126DD4A6CC414A7C69732AF /* NKCache-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,71 +49,71 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 55E4A42992859B2DF26BDCA640CDCFBC;
+			remoteGlobalIDString = 05D6BA9EE401EAACEF826D795A438287;
 			remoteInfo = NKCache;
 		};
 		ACDE74F610449A079F3C3190C7078E91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 55E4A42992859B2DF26BDCA640CDCFBC;
+			remoteGlobalIDString = 05D6BA9EE401EAACEF826D795A438287;
 			remoteInfo = NKCache;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0220F0D929F73D9647B6EAC9F03D4961 /* Pods-TiguerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TiguerTests-frameworks.sh"; sourceTree = "<group>"; };
+		080629509A8C54E988B3E5E57B8D5B95 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Promis/Classes/Promise.swift; sourceTree = "<group>"; };
+		086BF41943176C2C137EC4F371DF7390 /* Future+WhenAll.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Future+WhenAll.swift"; path = "Promis/Classes/Future+WhenAll.swift"; sourceTree = "<group>"; };
 		25588DA610ED29FD8ACAD03A6032FD7D /* Pods-TiguerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TiguerTests-umbrella.h"; sourceTree = "<group>"; };
-		26CF3A3A017955023EA8135DC2D1BE8E /* Future+Chaining.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Future+Chaining.swift"; path = "Promis/Classes/Future+Chaining.swift"; sourceTree = "<group>"; };
-		2A2C847D9265681283887DFF4A387DD8 /* NKCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NKCache.framework; path = NKCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AB458BB26091D28D66AB27C1EA65807 /* NKCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NKCache.xcconfig; sourceTree = "<group>"; };
+		2A2C847D9265681283887DFF4A387DD8 /* NKCache.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NKCache.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B28D4A0BF3885FD5F207F108550B6CF /* Pods-Tiguer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tiguer-umbrella.h"; sourceTree = "<group>"; };
-		3752334210E23B4E9E579CE833157E09 /* NKCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NKCache-dummy.m"; sourceTree = "<group>"; };
-		3C68CD0B06D7951AA22A26702E69B714 /* FutureState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FutureState.swift; path = Promis/Classes/FutureState.swift; sourceTree = "<group>"; };
+		3F74C8781B5FE5106A80BE51C07FF1F9 /* Promis-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Promis-Info.plist"; sourceTree = "<group>"; };
 		40CB39E715FBCDAA142E6513E126200A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		41B9B6916F282ECD17060A179E16F337 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Promis/Classes/Promise.swift; sourceTree = "<group>"; };
-		4CB6101C25B578324876E6F235EFA1AA /* NKCacheManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKCacheManager.swift; path = NKCache/NKCacheManager.swift; sourceTree = "<group>"; };
+		42C43F391FE22EBF0209481AD2E55E62 /* NKCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NKCache.modulemap; sourceTree = "<group>"; };
+		45993D708E222F55B1A739BE1A336CF8 /* NKCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKCache-prefix.pch"; sourceTree = "<group>"; };
+		46DE781366D516F8C9821F5BA34F59F7 /* NKCache.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NKCache.xcconfig; sourceTree = "<group>"; };
+		4EC6CE611011622B4DE94FEBF053F6D2 /* NKCache-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NKCache-Info.plist"; sourceTree = "<group>"; };
+		536952336E1674480A661E4640D6AB91 /* FutureState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FutureState.swift; path = Promis/Classes/FutureState.swift; sourceTree = "<group>"; };
+		53E04408BA78E26909CD4B14F6EF5598 /* Future+Chaining.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Future+Chaining.swift"; path = "Promis/Classes/Future+Chaining.swift"; sourceTree = "<group>"; };
 		54A598A02BF14ECE794FFE6D23CA3DA9 /* Pods-Tiguer-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tiguer-acknowledgements.plist"; sourceTree = "<group>"; };
 		58A02FCF7A66AA285C5C02E83888AC4E /* Pods-TiguerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TiguerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		58A8A7352F14442B645E0F04F6835A23 /* Pods-TiguerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TiguerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		629846AF01C9F651FBC202760652B3ED /* PromisError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PromisError.swift; path = Promis/Classes/PromisError.swift; sourceTree = "<group>"; };
+		63D24C6A7126DD4A6CC414A7C69732AF /* NKCache-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NKCache-dummy.m"; sourceTree = "<group>"; };
 		63D3E24AB84A30C2959E55888FEAC9FD /* Pods-TiguerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TiguerTests-dummy.m"; sourceTree = "<group>"; };
 		6BA94C4A596EAABDFCA6AC6BF02A8727 /* Pods-Tiguer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tiguer-dummy.m"; sourceTree = "<group>"; };
-		6C2912CFE1EFCE51893F982DF507C0DE /* Promis-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Promis-prefix.pch"; sourceTree = "<group>"; };
-		6C3569104020DCFE27F516B7441898DC /* Pods_Tiguer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Tiguer.framework; path = "Pods-Tiguer.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C3569104020DCFE27F516B7441898DC /* Pods_Tiguer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tiguer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		737AD63E2C59B040988531216FC6B3F7 /* Pods-TiguerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TiguerTests-Info.plist"; sourceTree = "<group>"; };
-		753409DEAA875F19A9AF4AB757C27C36 /* Promis.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Promis.xcconfig; sourceTree = "<group>"; };
+		73F9F7521261FF9B76E7272AFBDC0250 /* Promis-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Promis-prefix.pch"; sourceTree = "<group>"; };
+		760AC0031C20F2C058183D3E3AF77741 /* Promis.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Promis.modulemap; sourceTree = "<group>"; };
 		7DC47B4A6AD3B15BD1DADBD1E5EC7DF7 /* Pods-TiguerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TiguerTests.modulemap"; sourceTree = "<group>"; };
-		826AD7D241240EB24C0A181F57F5B586 /* PromisError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PromisError.swift; path = Promis/Classes/PromisError.swift; sourceTree = "<group>"; };
-		83FAAA67E0A8F130FDAC9B9431B966E9 /* NKCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKCache.h; path = NKCache/NKCache.h; sourceTree = "<group>"; };
 		856447FA551961DEEDAF067F42064EE6 /* Pods-Tiguer-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tiguer-Info.plist"; sourceTree = "<group>"; };
-		974594FF4052B994CA540E9AC5EE7482 /* Promis-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Promis-Info.plist"; sourceTree = "<group>"; };
-		97B7C8CF836F0F3ADE31570F4065AA14 /* Future.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Future.swift; path = Promis/Classes/Future.swift; sourceTree = "<group>"; };
 		97DA65785E01766F577A086E0DE174A3 /* Pods-TiguerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TiguerTests.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A0829F6E0AD4A77DDADC652A75156835 /* Pods-Tiguer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Tiguer.modulemap"; sourceTree = "<group>"; };
-		A1AAD0973F0291D901DE76BED5D47BCF /* Promis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Promis.framework; path = Promis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0F56FC8C0124A9D8EFE6AF1B3ECB0B7 /* NKCacheManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NKCacheManager.swift; path = NKCache/NKCacheManager.swift; sourceTree = "<group>"; };
+		A1AAD0973F0291D901DE76BED5D47BCF /* Promis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Promis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34409A3C673CA2F3CE2F69437E04CEE /* Pods-TiguerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TiguerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A85D55550562F34B67C7F18012DD7615 /* NKCache-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKCache-prefix.pch"; sourceTree = "<group>"; };
+		A7E7420F7E7BBDB7BD455807EBB6400B /* NKCache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKCache-umbrella.h"; sourceTree = "<group>"; };
+		AB699A18C52ADEF5A9109AE2ADAF8369 /* Promis.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Promis.xcconfig; sourceTree = "<group>"; };
 		B19B15EB4304E2D6142C62C50BA546C9 /* Pods-Tiguer-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tiguer-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B5901898D9F8E1C7D44FEB8F68E07264 /* Promis-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Promis-umbrella.h"; sourceTree = "<group>"; };
-		B7C5F0F8D888A7D98F4E83C0BEFD4283 /* Pods_TiguerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TiguerTests.framework; path = "Pods-TiguerTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C299A2D3CAC8198C1F43AB317E5C3C70 /* NKCache-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "NKCache-Info.plist"; sourceTree = "<group>"; };
+		B7C5F0F8D888A7D98F4E83C0BEFD4283 /* Pods_TiguerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TiguerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2E321B16CBB5870120363F9BCB6F25E /* NKCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NKCache.h; path = NKCache/NKCache.h; sourceTree = "<group>"; };
 		DB57ADC1B4D6690FE1F15F1F0044E3CB /* Pods-Tiguer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tiguer.debug.xcconfig"; sourceTree = "<group>"; };
-		E8606D1C5DCAC57F692691C4E5A7FE7B /* Future+WhenAll.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Future+WhenAll.swift"; path = "Promis/Classes/Future+WhenAll.swift"; sourceTree = "<group>"; };
+		E05C77E93F16F686A66D48E75150CC21 /* Promis-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Promis-dummy.m"; sourceTree = "<group>"; };
+		E28826BD99FED2DD8AADC1DC27727B15 /* Future.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Future.swift; path = Promis/Classes/Future.swift; sourceTree = "<group>"; };
 		ECF2A2B0720AE923C22BED3192888BE0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		EE4550288334EDD0526FB1D959070569 /* Pods-Tiguer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tiguer.release.xcconfig"; sourceTree = "<group>"; };
-		F0F0D680A74E6BF24293CD460FD12344 /* NKCache-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NKCache-umbrella.h"; sourceTree = "<group>"; };
-		F562D257CA449341E6241B1E5444B0D7 /* NKCache.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NKCache.modulemap; sourceTree = "<group>"; };
-		F830C878DBD999ADD7512C32B422CDC8 /* Promis-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Promis-dummy.m"; sourceTree = "<group>"; };
-		FB9760B99A613E07DFF3F66251204FA7 /* Promis.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Promis.modulemap; sourceTree = "<group>"; };
+		FBE415B987490767CE91E7FCCCB152A5 /* Promis-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Promis-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		826C1D7C8335A3C70BE436889DEEB40B /* Frameworks */ = {
+		03017F10702055CA60CFDCCD0FA30DFA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3232A2E55916AAA1D12C5DFF4B56CBD4 /* Foundation.framework in Frameworks */,
+				3B264F56D62D619481176F5F3EB7DEAA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,27 +145,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05AA064343B016E43CFEDDB5641C0278 /* Promis */ = {
-			isa = PBXGroup;
-			children = (
-				97B7C8CF836F0F3ADE31570F4065AA14 /* Future.swift */,
-				26CF3A3A017955023EA8135DC2D1BE8E /* Future+Chaining.swift */,
-				E8606D1C5DCAC57F692691C4E5A7FE7B /* Future+WhenAll.swift */,
-				3C68CD0B06D7951AA22A26702E69B714 /* FutureState.swift */,
-				41B9B6916F282ECD17060A179E16F337 /* Promise.swift */,
-				826AD7D241240EB24C0A181F57F5B586 /* PromisError.swift */,
-				EFDF8F824D8AABA74A617D1DD22D1182 /* Support Files */,
-			);
-			name = Promis;
-			path = Promis;
-			sourceTree = "<group>";
-		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				E169A450ED27AC725DF52953F66D11E0 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3170FA8F05BE469E59A7DAFE88831150 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				42C43F391FE22EBF0209481AD2E55E62 /* NKCache.modulemap */,
+				46DE781366D516F8C9821F5BA34F59F7 /* NKCache.xcconfig */,
+				63D24C6A7126DD4A6CC414A7C69732AF /* NKCache-dummy.m */,
+				4EC6CE611011622B4DE94FEBF053F6D2 /* NKCache-Info.plist */,
+				45993D708E222F55B1A739BE1A336CF8 /* NKCache-prefix.pch */,
+				A7E7420F7E7BBDB7BD455807EBB6400B /* NKCache-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NKCache";
+			sourceTree = "<group>";
+		};
+		3489E206C55971DED196C9EB12578F78 /* NKCache */ = {
+			isa = PBXGroup;
+			children = (
+				D2E321B16CBB5870120363F9BCB6F25E /* NKCache.h */,
+				A0F56FC8C0124A9D8EFE6AF1B3ECB0B7 /* NKCacheManager.swift */,
+				3170FA8F05BE469E59A7DAFE88831150 /* Support Files */,
+			);
+			path = NKCache;
+			sourceTree = "<group>";
+		};
+		3C1F3082E3CCCCC66DAF327CF69C5669 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3489E206C55971DED196C9EB12578F78 /* NKCache */,
+				53087D13BA5F41AB3BD52E6ABA44AA33 /* Promis */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		40C4B58663105DA71E79AA035A9FE7A1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				760AC0031C20F2C058183D3E3AF77741 /* Promis.modulemap */,
+				AB699A18C52ADEF5A9109AE2ADAF8369 /* Promis.xcconfig */,
+				E05C77E93F16F686A66D48E75150CC21 /* Promis-dummy.m */,
+				3F74C8781B5FE5106A80BE51C07FF1F9 /* Promis-Info.plist */,
+				73F9F7521261FF9B76E7272AFBDC0250 /* Promis-prefix.pch */,
+				FBE415B987490767CE91E7FCCCB152A5 /* Promis-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Promis";
+			sourceTree = "<group>";
+		};
+		53087D13BA5F41AB3BD52E6ABA44AA33 /* Promis */ = {
+			isa = PBXGroup;
+			children = (
+				E28826BD99FED2DD8AADC1DC27727B15 /* Future.swift */,
+				53E04408BA78E26909CD4B14F6EF5598 /* Future+Chaining.swift */,
+				086BF41943176C2C137EC4F371DF7390 /* Future+WhenAll.swift */,
+				536952336E1674480A661E4640D6AB91 /* FutureState.swift */,
+				080629509A8C54E988B3E5E57B8D5B95 /* Promise.swift */,
+				629846AF01C9F651FBC202760652B3ED /* PromisError.swift */,
+				40C4B58663105DA71E79AA035A9FE7A1 /* Support Files */,
+			);
+			path = Promis;
 			sourceTree = "<group>";
 		};
 		7DBC53B39A3761C746BBAB07F41917F4 /* Products */ = {
@@ -177,17 +223,6 @@
 				A1AAD0973F0291D901DE76BED5D47BCF /* Promis.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		8A8DC8DF227AA7A6E995A0A7182ADB1D /* NKCache */ = {
-			isa = PBXGroup;
-			children = (
-				83FAAA67E0A8F130FDAC9B9431B966E9 /* NKCache.h */,
-				4CB6101C25B578324876E6F235EFA1AA /* NKCacheManager.swift */,
-				F280CA6D209FEFF52BB933A099D6F313 /* Support Files */,
-			);
-			name = NKCache;
-			path = NKCache;
 			sourceTree = "<group>";
 		};
 		C9AF160B8FA2CFCA3BF7BD8AB08590D4 /* Targets Support Files */ = {
@@ -204,7 +239,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				F9775A3A3C4281B68ABF30547252156E /* Pods */,
+				3C1F3082E3CCCCC66DAF327CF69C5669 /* Pods */,
 				7DBC53B39A3761C746BBAB07F41917F4 /* Products */,
 				C9AF160B8FA2CFCA3BF7BD8AB08590D4 /* Targets Support Files */,
 			);
@@ -235,20 +270,6 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		EFDF8F824D8AABA74A617D1DD22D1182 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FB9760B99A613E07DFF3F66251204FA7 /* Promis.modulemap */,
-				753409DEAA875F19A9AF4AB757C27C36 /* Promis.xcconfig */,
-				F830C878DBD999ADD7512C32B422CDC8 /* Promis-dummy.m */,
-				974594FF4052B994CA540E9AC5EE7482 /* Promis-Info.plist */,
-				6C2912CFE1EFCE51893F982DF507C0DE /* Promis-prefix.pch */,
-				B5901898D9F8E1C7D44FEB8F68E07264 /* Promis-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Promis";
-			sourceTree = "<group>";
-		};
 		F17176D791A0E9FD719B9E5036A31C5A /* Pods-TiguerTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,46 +287,23 @@
 			path = "Target Support Files/Pods-TiguerTests";
 			sourceTree = "<group>";
 		};
-		F280CA6D209FEFF52BB933A099D6F313 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F562D257CA449341E6241B1E5444B0D7 /* NKCache.modulemap */,
-				2AB458BB26091D28D66AB27C1EA65807 /* NKCache.xcconfig */,
-				3752334210E23B4E9E579CE833157E09 /* NKCache-dummy.m */,
-				C299A2D3CAC8198C1F43AB317E5C3C70 /* NKCache-Info.plist */,
-				A85D55550562F34B67C7F18012DD7615 /* NKCache-prefix.pch */,
-				F0F0D680A74E6BF24293CD460FD12344 /* NKCache-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/NKCache";
-			sourceTree = "<group>";
-		};
-		F9775A3A3C4281B68ABF30547252156E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8A8DC8DF227AA7A6E995A0A7182ADB1D /* NKCache */,
-				05AA064343B016E43CFEDDB5641C0278 /* Promis */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		026C518364C0BA5F09316AD4231C3A74 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F348EE3A6CBA767E91122AA1E369533E /* NKCache-umbrella.h in Headers */,
+				FD026A07D71B87D66FADBEF635B33CCD /* NKCache.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4964624035BD07F31CD8269189F1436B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D701770862CF87EE036498C734E71A68 /* Pods-TiguerTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		55C64ECF42E9EA8B45E25A9388034D17 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6679984A5CACD929CE074769465EC3AB /* NKCache-umbrella.h in Headers */,
-				39DEB3ED7D4BBD1B32F16FF8D134B408 /* NKCache.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,14 +326,14 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		55E4A42992859B2DF26BDCA640CDCFBC /* NKCache */ = {
+		05D6BA9EE401EAACEF826D795A438287 /* NKCache */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 07830B87CBC0A501098285475ECBF135 /* Build configuration list for PBXNativeTarget "NKCache" */;
+			buildConfigurationList = E4F28E9069FEBF09F3D44DC0CD45E522 /* Build configuration list for PBXNativeTarget "NKCache" */;
 			buildPhases = (
-				55C64ECF42E9EA8B45E25A9388034D17 /* Headers */,
-				F1F9CB5A4E29175EF9DADB896DC377E6 /* Sources */,
-				826C1D7C8335A3C70BE436889DEEB40B /* Frameworks */,
-				03F97D31A88DDBB56FD2E523039E5A95 /* Resources */,
+				026C518364C0BA5F09316AD4231C3A74 /* Headers */,
+				2A474C9ED290F4A237BAFD39ECAACD1A /* Sources */,
+				03017F10702055CA60CFDCCD0FA30DFA /* Frameworks */,
+				F360AEF200CD266039CD22608C8F1255 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -411,13 +409,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -425,7 +424,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				55E4A42992859B2DF26BDCA640CDCFBC /* NKCache */,
+				05D6BA9EE401EAACEF826D795A438287 /* NKCache */,
 				58AF4FAED4833BEAB2090FD7B7A3CD9E /* Pods-Tiguer */,
 				C482201EA23E75A0AB9F2E9CDD722587 /* Pods-TiguerTests */,
 				75D8679DB958D718D4E18E8A4818E1CE /* Promis */,
@@ -434,13 +433,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		03F97D31A88DDBB56FD2E523039E5A95 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		1D60F73D1C2780CA07195B4D4E888AC2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -462,9 +454,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F360AEF200CD266039CD22608C8F1255 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2A474C9ED290F4A237BAFD39ECAACD1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDCFC70C30A1B4B44F262590A04D28CD /* NKCache-dummy.m in Sources */,
+				221AA360D73F471483FF429EEB716732 /* NKCacheManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		71AD0AF8E945C1C3DCF5E8761987ADD4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,22 +503,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F1F9CB5A4E29175EF9DADB896DC377E6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				74D9269DCE5F206CD5FA7EBE940123A8 /* NKCache-dummy.m in Sources */,
-				A643F1EE1C5AD61625036E8BB411FF4F /* NKCacheManager.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		0E440190014413B89442BD04D718B9EE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NKCache;
-			target = 55E4A42992859B2DF26BDCA640CDCFBC /* NKCache */;
+			target = 05D6BA9EE401EAACEF826D795A438287 /* NKCache */;
 			targetProxy = 7848DCBE482B8D89D413B1BBBED65A1C /* PBXContainerItemProxy */;
 		};
 		414DB9AF8A2F5108BB6D97F27414F1A4 /* PBXTargetDependency */ = {
@@ -528,7 +527,7 @@
 		F33580BEF8DD127889F23D6832133E8D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = NKCache;
-			target = 55E4A42992859B2DF26BDCA640CDCFBC /* NKCache */;
+			target = 05D6BA9EE401EAACEF826D795A438287 /* NKCache */;
 			targetProxy = ACDE74F610449A079F3C3190C7078E91 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -552,11 +551,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Tiguer/Pods-Tiguer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Tiguer/Pods-Tiguer.modulemap";
 				OTHER_LDFLAGS = "";
@@ -573,9 +568,41 @@
 			};
 			name = Release;
 		};
+		1E905CC239F450C92F79B2D2D7C9CABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46DE781366D516F8C9821F5BA34F59F7 /* NKCache.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NKCache/NKCache-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NKCache/NKCache-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NKCache/NKCache.modulemap";
+				PRODUCT_MODULE_NAME = NKCache;
+				PRODUCT_NAME = NKCache;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		769E19C338726E327DE4020236CF32A9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 753409DEAA875F19A9AF4AB757C27C36 /* Promis.xcconfig */;
+			baseConfigurationReference = AB699A18C52ADEF5A9109AE2ADAF8369 /* Promis.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -590,11 +617,7 @@
 				INFOPLIST_FILE = "Target Support Files/Promis/Promis-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Promis/Promis.modulemap";
 				PRODUCT_MODULE_NAME = Promis;
 				PRODUCT_NAME = Promis;
@@ -613,6 +636,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -662,46 +686,9 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		88CB94B4960C3D034505BDBCD60AEE09 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AB458BB26091D28D66AB27C1EA65807 /* NKCache.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/NKCache/NKCache-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/NKCache/NKCache-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/NKCache/NKCache.modulemap";
-				PRODUCT_MODULE_NAME = NKCache;
-				PRODUCT_NAME = NKCache;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -723,11 +710,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-Tiguer/Pods-Tiguer-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-Tiguer/Pods-Tiguer.modulemap";
 				OTHER_LDFLAGS = "";
@@ -761,11 +744,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-TiguerTests/Pods-TiguerTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TiguerTests/Pods-TiguerTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -781,9 +760,9 @@
 			};
 			name = Debug;
 		};
-		B5C33BE11FE88A73A6618C82F965ED23 /* Debug */ = {
+		BE2AEDDAE09B3A571848416735FB21A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2AB458BB26091D28D66AB27C1EA65807 /* NKCache.xcconfig */;
+			baseConfigurationReference = 46DE781366D516F8C9821F5BA34F59F7 /* NKCache.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -798,11 +777,7 @@
 				INFOPLIST_FILE = "Target Support Files/NKCache/NKCache-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/NKCache/NKCache.modulemap";
 				PRODUCT_MODULE_NAME = NKCache;
 				PRODUCT_NAME = NKCache;
@@ -820,6 +795,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -882,7 +858,7 @@
 		};
 		F8264F3C226C82B8E66008C1A7A092EB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 753409DEAA875F19A9AF4AB757C27C36 /* Promis.xcconfig */;
+			baseConfigurationReference = AB699A18C52ADEF5A9109AE2ADAF8369 /* Promis.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -897,11 +873,7 @@
 				INFOPLIST_FILE = "Target Support Files/Promis/Promis-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Promis/Promis.modulemap";
 				PRODUCT_MODULE_NAME = Promis;
 				PRODUCT_NAME = Promis;
@@ -933,11 +905,7 @@
 				INFOPLIST_FILE = "Target Support Files/Pods-TiguerTests/Pods-TiguerTests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TiguerTests/Pods-TiguerTests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -957,15 +925,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		07830B87CBC0A501098285475ECBF135 /* Build configuration list for PBXNativeTarget "NKCache" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B5C33BE11FE88A73A6618C82F965ED23 /* Debug */,
-				88CB94B4960C3D034505BDBCD60AEE09 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -998,6 +957,15 @@
 			buildConfigurations = (
 				F8264F3C226C82B8E66008C1A7A092EB /* Debug */,
 				769E19C338726E327DE4020236CF32A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4F28E9069FEBF09F3D44DC0CD45E522 /* Build configuration list for PBXNativeTarget "NKCache" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE2AEDDAE09B3A571848416735FB21A3 /* Debug */,
+				1E905CC239F450C92F79B2D2D7C9CABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
