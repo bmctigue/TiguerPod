@@ -19,6 +19,7 @@
 		A857CB472203C78800FB4BD9 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB432203C78800FB4BD9 /* TableViewDataSource.swift */; };
 		A857CB482203C78800FB4BD9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB442203C78800FB4BD9 /* LoadingViewController.swift */; };
 		A857CB492203C78800FB4BD9 /* UIViewController+AddRemove.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB452203C78800FB4BD9 /* UIViewController+AddRemove.swift */; };
+		A860EB2B2257A3B100F9AE93 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A860EB2A2257A3B100F9AE93 /* CollectionViewDataSource.swift */; };
 		A8693E98221227380018CDEB /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8693E97221227380018CDEB /* Presenter.swift */; };
 		A8693E9A221229490018CDEB /* PresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8693E99221229490018CDEB /* PresenterTests.swift */; };
 		A86B7E822253B60900D45DD2 /* UserDefaults+Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86B7E812253B60900D45DD2 /* UserDefaults+Storage.swift */; };
@@ -76,6 +77,7 @@
 		A857CB432203C78800FB4BD9 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		A857CB442203C78800FB4BD9 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		A857CB452203C78800FB4BD9 /* UIViewController+AddRemove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+AddRemove.swift"; sourceTree = "<group>"; };
+		A860EB2A2257A3B100F9AE93 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		A8693E97221227380018CDEB /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		A8693E99221229490018CDEB /* PresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterTests.swift; sourceTree = "<group>"; };
 		A86B7E812253B60900D45DD2 /* UserDefaults+Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Storage.swift"; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 				A88969A5222584060090780C /* SelectionManager.swift */,
 				A887B3722200C5BD00870406 /* DynamicValue.swift */,
 				A857CB432203C78800FB4BD9 /* TableViewDataSource.swift */,
+				A860EB2A2257A3B100F9AE93 /* CollectionViewDataSource.swift */,
 				A857CB452203C78800FB4BD9 /* UIViewController+AddRemove.swift */,
 				A887B3692200C5B200870406 /* DispatchingQueues.swift */,
 				A887B3682200C5B200870406 /* UITableView+ScrollToTop.swift */,
@@ -424,6 +427,7 @@
 				A8049E38220DF00600710599 /* Constants.swift in Sources */,
 				A857CB482203C78800FB4BD9 /* LoadingViewController.swift in Sources */,
 				A857CB492203C78800FB4BD9 /* UIViewController+AddRemove.swift in Sources */,
+				A860EB2B2257A3B100F9AE93 /* CollectionViewDataSource.swift in Sources */,
 				A8031D4B22146F6F006C986B /* DataAdapter.swift in Sources */,
 				A887B36F2200C5B200870406 /* UITableView+ScrollToTop.swift in Sources */,
 				A8BD812922088AFB005D5BA6 /* Cache.swift in Sources */,
