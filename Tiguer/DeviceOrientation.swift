@@ -9,7 +9,7 @@
 import Foundation
 
 extension Tiguer {
-    struct DeviceInfo {
+    public struct DeviceInfo {
         struct Orientation {
             // indicate current device is in the LandScape orientation
             static var isLandscape: Bool {
