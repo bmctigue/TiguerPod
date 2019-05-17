@@ -36,6 +36,11 @@ public class DynamicValue<T> {
         self.notify()
     }
     
+    public func addSoloObserver(observer: NSObject, completionHandler: @escaping CompletionHandler) {
+        observers.removeAll()
+        self.addObserver(observer, completionHandler: completionHandler)
+    }
+    
     private func notify() {
         observers.forEach({ $0.value() })
     }
