@@ -31,15 +31,15 @@ public class DynamicValue<T> {
         }
     }
     
-    public func addAndNotify(observer: NSObject, completionHandler: @escaping CompletionHandler) {
-        self.addObserver(observer, completionHandler: completionHandler)
-        self.notify()
-    }
-    
-    public func addSoloObserver(observer: NSObject, completionHandler: @escaping CompletionHandler) {
+    public func addSoloObserver(_ observer: NSObject, completionHandler: @escaping CompletionHandler) {
         observers.removeAll()
         self.addObserver(observer, completionHandler: completionHandler)
     }
+    
+    public func addAndNotify(observer: NSObject, completionHandler: @escaping CompletionHandler) {
+        self.addObserver(observer, completionHandler: completionHandler)
+        self.notify()
+    }    
     
     private func notify() {
         observers.forEach({ $0.value() })
