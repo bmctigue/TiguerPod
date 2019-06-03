@@ -15,6 +15,7 @@
 		A8049E3A220DF03C00710599 /* RemoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8049E39220DF03C00710599 /* RemoteStore.swift */; };
 		A8049E3C220DF0C900710599 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8049E3B220DF0C900710599 /* Service.swift */; };
 		A8049E3E220DF99800710599 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8049E3D220DF99800710599 /* Interactor.swift */; };
+		A81C329F22A5404D0093BD89 /* DataDifferenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81C329E22A5404D0093BD89 /* DataDifferenceManager.swift */; };
 		A857CB462203C78800FB4BD9 /* LocalStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB422203C78800FB4BD9 /* LocalStore.swift */; };
 		A857CB472203C78800FB4BD9 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB432203C78800FB4BD9 /* TableViewDataSource.swift */; };
 		A857CB482203C78800FB4BD9 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857CB442203C78800FB4BD9 /* LoadingViewController.swift */; };
@@ -75,6 +76,7 @@
 		A8049E39220DF03C00710599 /* RemoteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteStore.swift; sourceTree = "<group>"; };
 		A8049E3B220DF0C900710599 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		A8049E3D220DF99800710599 /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		A81C329E22A5404D0093BD89 /* DataDifferenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDifferenceManager.swift; sourceTree = "<group>"; };
 		A857CB422203C78800FB4BD9 /* LocalStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStore.swift; sourceTree = "<group>"; };
 		A857CB432203C78800FB4BD9 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
 		A857CB442203C78800FB4BD9 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				A88149482211B7B10072162F /* Assets.xcassets */,
 				A887B3442200C49E00870406 /* Info.plist */,
 				A887B3432200C49E00870406 /* Tiguer.h */,
+				A81C329E22A5404D0093BD89 /* DataDifferenceManager.swift */,
 			);
 			path = Tiguer;
 			sourceTree = "<group>";
@@ -378,12 +381,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-TiguerTests/Pods-TiguerTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Promis/Promis.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DifferenceKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Promis.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +423,7 @@
 			files = (
 				A8693E98221227380018CDEB /* Presenter.swift in Sources */,
 				A857CB472203C78800FB4BD9 /* TableViewDataSource.swift in Sources */,
+				A81C329F22A5404D0093BD89 /* DataDifferenceManager.swift in Sources */,
 				A887B3702200C5B200870406 /* DispatchingQueues.swift in Sources */,
 				A8BFD1D12217321E0095881A /* TestModels.swift in Sources */,
 				A8049E3C220DF0C900710599 /* Service.swift in Sources */,

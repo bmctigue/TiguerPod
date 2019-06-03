@@ -68,5 +68,4 @@ class DynamicValueTests: XCTestCase {
         
         waitForExpectations(timeout: 5)
     }
-
 }
