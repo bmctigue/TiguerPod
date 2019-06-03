@@ -17,20 +17,20 @@ extension Tiguer {
             guard testingState == .notTesting else {
                 return
             }
-            SafeQueue.instance.asyncDispatch {
+            AsyncQueue.safe.dispatch {
                 UserDefaults.standard.save(customObject: (object as CacheObject), inKey: key)
             }
         }
         
         public func getObjectForKey<CacheObject>(_ key: String, completionHandler: @escaping (CacheObject?) -> ()) where CacheObject : Decodable, CacheObject : Encodable {
-            SafeQueue.instance.syncDispatch {
+            SyncQueue.safe.dispatch {
                 let object = UserDefaults.standard.retrieve(object: CacheObject.self, fromKey: key)
                 completionHandler(object)
             }
         }
         
         public func removeObjectForKey(_ key: String) {
-            SafeQueue.instance.asyncDispatch {
+            AsyncQueue.safe.dispatch {
                 UserDefaults.standard.delete(forKey: key)
             }
         }

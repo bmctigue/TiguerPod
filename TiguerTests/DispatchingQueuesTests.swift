@@ -97,10 +97,10 @@ class DispatchingQueuesTests: XCTestCase {
     func testAsyncSafeQueue() {
         let expectation = self.expectation(description: "addObserver")
         var result = 0
-        SafeQueue.instance.asyncDispatch { [weak self] in
+        AsyncQueue.safe.dispatch { [weak self] in
             if let self = self {
                 self.dictionary[self.key] = self.value
-                SafeQueue.instance.asyncDispatch {
+                AsyncQueue.safe.dispatch {
                     result = self.dictionary[self.key] ?? 0
                     expectation.fulfill()
                 }
@@ -112,12 +112,12 @@ class DispatchingQueuesTests: XCTestCase {
 
     func testSyncSafeQueue() {
         var result = 0
-        SafeQueue.instance.syncDispatch { [weak self] in
+        SyncQueue.safe.dispatch { [weak self] in
             if let self = self {
                 self.dictionary[self.key] = self.value
             }
         }
-        SafeQueue.instance.syncDispatch {
+        SyncQueue.safe.dispatch {
             result = self.dictionary[self.key] ?? 0
         }
         XCTAssert(result == value)

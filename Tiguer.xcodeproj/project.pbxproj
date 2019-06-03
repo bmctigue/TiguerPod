@@ -190,6 +190,7 @@
 				A860EB2A2257A3B100F9AE93 /* CollectionViewDataSource.swift */,
 				A857CB452203C78800FB4BD9 /* UIViewController+AddRemove.swift */,
 				A887B3692200C5B200870406 /* DispatchingQueues.swift */,
+				A875B555225A41ED001BBA9F /* DeviceOrientation.swift */,
 				A887B3682200C5B200870406 /* UITableView+ScrollToTop.swift */,
 				A887B3642200C5B200870406 /* URLProtocolStub.swift */,
 				A8BD812822088AFB005D5BA6 /* Cache.swift */,
@@ -201,7 +202,6 @@
 				A88149482211B7B10072162F /* Assets.xcassets */,
 				A887B3442200C49E00870406 /* Info.plist */,
 				A887B3432200C49E00870406 /* Tiguer.h */,
-				A875B555225A41ED001BBA9F /* DeviceOrientation.swift */,
 			);
 			path = Tiguer;
 			sourceTree = "<group>";
