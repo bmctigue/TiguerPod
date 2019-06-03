@@ -62,7 +62,7 @@ class DynamicValueTests: XCTestCase {
             exp.fulfill()
         }
         
-        DispatchQueue.global(qos: .background).async {
+        AsyncQueue.background.dispatch {
             instance = nil
         }
         
