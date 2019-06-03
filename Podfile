@@ -3,7 +3,6 @@ use_frameworks!
 
 def shared_pods
   pod 'Promis'
-  pod 'DifferenceKit'
 end
 
 target 'Tiguer' do
