@@ -8,12 +8,12 @@
 
 Pod::Spec.new do |s|
   s.name         = "Tiguer"
-  s.version      = "0.0.29"
+  s.version      = "0.0.30"
   s.summary      = "Common source files."
   s.description  = "Common source files. Sourced from John Sundell mostly."
   s.license      = 'MIT'
   s.author       = { "Bruce McTigue" => "bmctigue@tiguer.com" }
-  s.platform     = :ios, "12.2"
+  s.platform     = :ios, "12.4"
   s.source       = { :git => "https://github.com/bmctigue/Tiguer.git", :tag => "#{s.version}" }
   s.source_files  = "Tiguer"
   s.exclude_files = "Classes/Exclude"
