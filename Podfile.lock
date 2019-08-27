@@ -1,5 +1,5 @@
 PODS:
-  - Promis (2.0.1)
+  - Promis (2.2.0)
 
 DEPENDENCIES:
   - Promis
@@ -9,7 +9,7 @@ SPEC REPOS:
     - Promis
 
 SPEC CHECKSUMS:
-  Promis: ba663b5d73bb22948ec6143928fdf0e896364976
+  Promis: 4b7c710108427d361e29a2be352dc0eff5315456
 
 PODFILE CHECKSUM: 6faa45adbec70adb0cb4964314212b79afb63fd8
 
