@@ -11,11 +11,11 @@ import Promis
 
 public typealias VCBuilderBlock = ((UIViewController) -> Void)
 
-public protocol BaseBuilder: class {
+public protocol BaseBuilder: AnyObject {
     func run()
 }
 
-public protocol VCBuilder: class {
+public protocol VCBuilder: AnyObject {
     func run(completionHandler: VCBuilderBlock)
 }
 
@@ -23,21 +23,21 @@ public protocol StoreProtocol {
     func fetchData(_ url: URL?) -> Future<Store.Result>
 }
 
-public protocol DataAdapterProtocol: class {
+public protocol DataAdapterProtocol: AnyObject {
     associatedtype Model
     func itemsFromData(_ data: Data) -> Future<DataAdapterResult.Result<Model>>
 }
 
-public protocol ServiceProtocol: class {
+public protocol ServiceProtocol: AnyObject {
     associatedtype Model: Codable
     func fetchItems(_ request: Request, url: URL?, completionHandler: @escaping ([Model]) -> Void)
 }
 
-public protocol InteractorProtocol: class {
+public protocol InteractorProtocol: AnyObject {
     func fetchItems(_ request: Request, url: URL?)
 }
 
-public protocol PresenterProtocol: class {
+public protocol PresenterProtocol: AnyObject {
     associatedtype Model
     func updateViewModels(_ response: Response<Model>)
 }
