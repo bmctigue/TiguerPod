@@ -9,7 +9,7 @@
 import UIKit
 
 public class LoadingViewController: UIViewController {
-    private lazy var activityIndicator = UIActivityIndicatorView(style: .whiteLarge)
+    private lazy var activityIndicator = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.large)
     private lazy var alphaBackgroundView = UIView()
     
     override public func viewDidLoad() {
