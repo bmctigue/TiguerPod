@@ -67,7 +67,7 @@ extension URLGenerator {
 public protocol CacheProtocol {
     associatedtype CacheObject
     func setObject<CacheObject: Codable>(_ object:CacheObject, forKey key:String)
-    func getObjectForKey<CacheObject: Codable>(_ key: String, completionHandler: @escaping (CacheObject?)->())
+    func getObjectForKey<CacheObject>(_ key: String) -> CacheObject? where CacheObject : Decodable, CacheObject : Encodable
     func removeObjectForKey(_ key:String)
 }
 

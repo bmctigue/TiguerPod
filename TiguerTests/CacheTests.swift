@@ -20,10 +20,9 @@ class CacheTests: XCTestCase {
     func testAddObjectToCache() {
         let cache = Tiguer.BaseCache<CacheObject>()
         cache.setObject(set, forKey: testKey)
-        cache.getObjectForKey(testKey) { [weak self] (object: CacheObject?) in
-            XCTAssertNotNil(object)
-            XCTAssert(object!.contains(self!.testInt))
-        }
+        let result = cache.getObjectForKey(testKey) ?? CacheObject()
+        XCTAssert(!result.isEmpty)
+        XCTAssert(result.contains(self.testInt))
     }
     
     func testAddObjectToCacheTesting() {
@@ -31,17 +30,15 @@ class CacheTests: XCTestCase {
         cache.updateTestingState(TestingState.testing)
         cache.removeObjectForKey(testKey)
         cache.setObject(set, forKey: testKey)
-        cache.getObjectForKey(testKey) { (object: CacheObject?) in
-            XCTAssertNil(object)
-        }
+        let result = cache.getObjectForKey(testKey) ?? CacheObject()
+        XCTAssert(result.count == 0)
     }
     
     func testRemoveObjectFromCache() {
         let cache = Tiguer.BaseCache<CacheObject>()
         cache.setObject(set, forKey: testKey)
         cache.removeObjectForKey(testKey)
-        cache.getObjectForKey(testKey) { (object: CacheObject?) in
-            XCTAssertNil(object)
-        }
+        let result = cache.getObjectForKey(testKey) ?? CacheObject()
+        XCTAssert(result.count == 0)
     }
 }

@@ -22,10 +22,7 @@ extension Tiguer {
             self.store = store
             self.dataAdapter = dataAdapter
             self.cacheKey = cacheKey
-            
-            cache.getObjectForKey(cacheKey) { [weak self] (object: [Model]?) in
-                self?.models = object ?? []
-            }
+            self.models = cache.getObjectForKey(cacheKey) ?? []
         }
         
         public func fetchItems(_ request: Request, url: URL?, completionHandler: @escaping ([Model]) -> Void) {

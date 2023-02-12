@@ -19,9 +19,7 @@ extension Tiguer {
         private lazy var cache = BaseCache<CacheObject>()
         
         public init() {
-            cache.getObjectForKey(selectionKey) { [weak self] (object: CacheObject?) in
-                self?.selections = object ?? []
-            }
+            self.selections = cache.getObjectForKey(selectionKey) ?? []
         }
         
         open func updateSelections(_ state: SelectionState) {

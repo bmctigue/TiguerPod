@@ -22,7 +22,7 @@ extension UserDefaults {
             let decoder = JSONDecoder()
             if let object = try? decoder.decode(type, from: data) {
                 return object
-            }else {
+            } else {
                 print("Couldnt decode object")
                 return nil
             }
